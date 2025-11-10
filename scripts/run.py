@@ -199,7 +199,6 @@ def main(argv: Optional[list[str]] = None) -> int:
             nama_kab or "-",
             jumlah_kuota if jumlah_kuota is not None else "-",
             jumlah_terdaftar if jumlah_terdaftar is not None else "-",
-            app_text,
             accept_pct_text,
         ])
 
@@ -230,11 +229,11 @@ def main(argv: Optional[list[str]] = None) -> int:
     try:
         from tabulate import tabulate
 
-        headers = ["#", "posisi", "perusahaan", "kabupaten", "kuota", "terdaftar", "app/slot", "accept%"]
+        headers = ["#", "posisi", "perusahaan", "kabupaten", "kuota", "terdaftar", "accept%"]
         print(tabulate(rows, headers=headers, tablefmt="github"))
     except Exception:
         # Fallback to manual formatting
-        col_headers = ["#", "posisi", "perusahaan", "kabupaten", "kuota", "terdaftar", "app/slot", "accept%"]
+        col_headers = ["#", "posisi", "perusahaan", "kabupaten", "kuota", "terdaftar", "accept%"]
         col_widths = [max(len(str(cell)) for cell in col) for col in zip(*([[h for h in col_headers]] + rows))]
         fmt = "  ".join(f"{{:<{w}}}" for w in col_widths)
         headers = col_headers
