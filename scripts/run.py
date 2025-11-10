@@ -193,6 +193,7 @@ def main(argv: Optional[list[str]] = None) -> int:
         accept_pct_text = f"{(acceptance_prob * 100):.2f}%" if isinstance(acceptance_prob, float) else "-"
 
         rows.append([
+            item.get("id_posisi") or "-",
             posisi or "-",
             nama_perusahaan or "-",
             nama_kab or "-",
@@ -228,11 +229,11 @@ def main(argv: Optional[list[str]] = None) -> int:
     try:
         from tabulate import tabulate
 
-        headers = ["posisi", "perusahaan", "kabupaten", "kuota", "terdaftar", "accept%"]
+        headers = ["id_posisi", "posisi", "perusahaan", "kabupaten", "kuota", "terdaftar", "accept%"]
         print(tabulate(rows, headers=headers, tablefmt="github"))
     except Exception:
         # Fallback to manual formatting
-        col_headers = ["posisi", "perusahaan", "kabupaten", "kuota", "terdaftar", "accept%"]
+        col_headers = ["id_posisi", "posisi", "perusahaan", "kabupaten", "kuota", "terdaftar", "accept%"]
         col_widths = [max(len(str(cell)) for cell in col) for col in zip(*([[h for h in col_headers]] + rows))]
         fmt = "  ".join(f"{{:<{w}}}" for w in col_widths)
         headers = col_headers
