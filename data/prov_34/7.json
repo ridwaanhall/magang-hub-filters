@@ -167,7 +167,7 @@
       "id_jenis_kelamin": null,
       "id_status_posisi": 2,
       "jumlah_kuota": 1,
-      "jumlah_terdaftar": 30,
+      "jumlah_terdaftar": 29,
       "program_studi": "[{\"id\":\"ab4266f3-7655-4e0b-ada0-4fe089741849\",\"title\":\"Biologi\"},{\"id\":\"866914cb-5fd3-4b7e-bd1e-a19a2dcab54a\",\"title\":\"Mikrobiologi\"},{\"id\":\"4f53bef4-5310-443b-82bc-1e99f1f2ef08\",\"title\":\"Farmasi\"},{\"id\":\"9866a10b-9bb7-4303-80b6-c52fe34cd1fe\",\"title\":\"Bioteknologi\"},{\"id\":\"08a735c6-f631-45d2-8635-4680a0aaef3f\",\"title\":\"Biologi Terapan\"}]",
       "jenjang": "[\"Sarjana\"]",
       "ref_status_posisi": {
@@ -467,7 +467,7 @@
       "id_jenis_kelamin": null,
       "id_status_posisi": 2,
       "jumlah_kuota": 1,
-      "jumlah_terdaftar": 4,
+      "jumlah_terdaftar": 3,
       "program_studi": "[{\"id\":\"c13ae920-a48f-4a7c-8c89-2b286a7fc225\",\"title\":\"Akuntansi\"},{\"id\":\"17d689d0-6f72-4037-9270-12651a2b9e9c\",\"title\":\"Akuntansi Perpajakan\"},{\"id\":\"0b0a2a05-888a-43fc-ac2f-faa42ffd95da\",\"title\":\"Perpajakan\"},{\"id\":\"37972e05-4e53-4f9d-beb1-a301de6a2572\",\"title\":\"Akuntansi Keuangan\"}]",
       "jenjang": "[\"Diploma\",\"Sarjana\"]",
       "ref_status_posisi": {
@@ -617,7 +617,7 @@
       "id_jenis_kelamin": null,
       "id_status_posisi": 2,
       "jumlah_kuota": 1,
-      "jumlah_terdaftar": 4,
+      "jumlah_terdaftar": 5,
       "program_studi": "[{\"id\":\"4921b3e9-3836-4d2b-951a-45105bf57313\",\"title\":\"Perbankan\"},{\"id\":\"a09e5326-50be-41c2-aed4-f3d2974ef403\",\"title\":\"Manajemen Keuangan Perbankan\"},{\"id\":\"f8e3de2f-729d-480c-9b3d-c8af8e72267d\",\"title\":\"Ekonomi, Keuangan dan Perbankan\"},{\"id\":\"c13ae920-a48f-4a7c-8c89-2b286a7fc225\",\"title\":\"Akuntansi\"},{\"id\":\"02b4ec7d-94a2-4768-937f-ec401fac608e\",\"title\":\"Manajemen Keuangan\"}]",
       "jenjang": "[\"Diploma\",\"Sarjana\"]",
       "ref_status_posisi": {
@@ -992,7 +992,7 @@
       "id_jenis_kelamin": null,
       "id_status_posisi": 2,
       "jumlah_kuota": 1,
-      "jumlah_terdaftar": 9,
+      "jumlah_terdaftar": 10,
       "program_studi": "[{\"id\":\"03b570a2-c678-4413-aa47-bfed8308fac5\",\"title\":\"Teknik Informatika\"},{\"id\":\"246e6e8a-413d-4dff-9d82-161b6222f8d0\",\"title\":\"Ilmu Komputer\"},{\"id\":\"ea498c86-2eeb-4dc2-8844-f546e73a4aee\",\"title\":\"Teknik Komputer\"},{\"id\":\"a26f4961-a89a-4530-bde1-674cb98b60e8\",\"title\":\"Sistem informasi\"}]",
       "jenjang": "[\"Diploma\",\"Sarjana\"]",
       "ref_status_posisi": {
@@ -1142,7 +1142,7 @@
       "id_jenis_kelamin": null,
       "id_status_posisi": 2,
       "jumlah_kuota": 1,
-      "jumlah_terdaftar": 8,
+      "jumlah_terdaftar": 7,
       "program_studi": "[{\"id\":\"fb8baadf-4b6f-423a-a499-07e330c61000\",\"title\":\"Administrasi Perkantoran\"},{\"id\":\"2c88d9da-5636-40d2-9d1d-d3882c313960\",\"title\":\"Kearsipan\"},{\"id\":\"fa9c3906-d811-4cc1-836e-e861f0a75f01\",\"title\":\"Manajemen Administrasi Perkantoran\"},{\"id\":\"95dd752e-e00f-4431-90bf-58bdd324a48f\",\"title\":\"Ilmu Komunikasi\"}]",
       "jenjang": "[\"Sarjana\"]",
       "ref_status_posisi": {
@@ -3317,7 +3317,7 @@
       "id_jenis_kelamin": null,
       "id_status_posisi": 2,
       "jumlah_kuota": 1,
-      "jumlah_terdaftar": 9,
+      "jumlah_terdaftar": 10,
       "program_studi": "[{\"id\":\"7e09c3d4-06b6-4d22-950f-20eab995268a\",\"title\":\"Akuntansi Keuangan Publik\"},{\"id\":\"7e452d8e-18e0-40a2-a414-35ed855d0381\",\"title\":\"Akuntansi Manajemen Pemerintahan\"},{\"id\":\"64e62f19-d0f1-4e66-8c5f-11a4b7a2378e\",\"title\":\"Akuntansi Sektor Publik\"},{\"id\":\"7d00e7aa-90a4-49a6-a9cc-372a5f04983b\",\"title\":\"Manajemen Aset Publik\"},{\"id\":\"c13ae920-a48f-4a7c-8c89-2b286a7fc225\",\"title\":\"Akuntansi\"}]",
       "jenjang": "[\"Diploma\",\"Sarjana\"]",
       "ref_status_posisi": {
@@ -4142,7 +4142,7 @@
       "id_jenis_kelamin": null,
       "id_status_posisi": 2,
       "jumlah_kuota": 1,
-      "jumlah_terdaftar": 13,
+      "jumlah_terdaftar": 12,
       "program_studi": "[{\"id\":\"170e2946-fe31-4913-841d-6d0a8016fb26\",\"title\":\"Penyiaran\"},{\"id\":\"95dd752e-e00f-4431-90bf-58bdd324a48f\",\"title\":\"Ilmu Komunikasi\"},{\"id\":\"a5fb0a56-78ec-485e-84a0-b85f818c3ed1\",\"title\":\"Teknologi Multimedia dan Broadcasting\"},{\"id\":\"bef61511-23f4-4602-96e5-1661680bf4de\",\"title\":\"Komunikasi Digital dan Media\"},{\"id\":\"38a57855-c348-4e9e-845a-d3fa03c133b6\",\"title\":\"Jurnalistik\"}]",
       "jenjang": "[\"Diploma\",\"Sarjana\"]",
       "ref_status_posisi": {
@@ -4517,7 +4517,7 @@
       "id_jenis_kelamin": null,
       "id_status_posisi": 2,
       "jumlah_kuota": 1,
-      "jumlah_terdaftar": 4,
+      "jumlah_terdaftar": 3,
       "program_studi": "[{\"id\":\"9dfcaa37-a44b-4331-87ab-bd32dc1066cb\",\"title\":\"Desain Komunikasi Visual\"}]",
       "jenjang": "[\"Sarjana\"]",
       "ref_status_posisi": {
@@ -4592,7 +4592,7 @@
       "id_jenis_kelamin": null,
       "id_status_posisi": 2,
       "jumlah_kuota": 1,
-      "jumlah_terdaftar": 18,
+      "jumlah_terdaftar": 19,
       "program_studi": "[{\"id\":\"fd3ebf70-4f4b-4dab-a7ab-ec31d20bd01b\",\"title\":\"Hukum\"}]",
       "jenjang": "[\"Sarjana\"]",
       "ref_status_posisi": {
@@ -5867,7 +5867,7 @@
       "id_jenis_kelamin": null,
       "id_status_posisi": 2,
       "jumlah_kuota": 1,
-      "jumlah_terdaftar": 8,
+      "jumlah_terdaftar": 9,
       "program_studi": "[{\"id\":\"3e1f167b-ac1f-4208-b1f7-ff2244791c64\",\"title\":\"Psikologi\"},{\"id\":\"fd3ebf70-4f4b-4dab-a7ab-ec31d20bd01b\",\"title\":\"Hukum\"}]",
       "jenjang": "[\"Sarjana\"]",
       "ref_status_posisi": {
@@ -6392,7 +6392,7 @@
       "id_jenis_kelamin": null,
       "id_status_posisi": 2,
       "jumlah_kuota": 1,
-      "jumlah_terdaftar": 5,
+      "jumlah_terdaftar": 7,
       "program_studi": "[{\"id\":\"ecfc7a4a-9ddc-4291-a35e-eda47e3050b1\",\"title\":\"Kesekretariatan\"},{\"id\":\"44c12a8c-7a88-47ea-87fb-0e7202a1390d\",\"title\":\"Administrasi\"},{\"id\":\"9d46d840-695e-4ecf-915c-ef58ebc36d9b\",\"title\":\"Administrasi Bisnis\"}]",
       "jenjang": "[\"Diploma\",\"Sarjana\"]",
       "ref_status_posisi": {
@@ -6542,7 +6542,7 @@
       "id_jenis_kelamin": null,
       "id_status_posisi": 2,
       "jumlah_kuota": 1,
-      "jumlah_terdaftar": 0,
+      "jumlah_terdaftar": 1,
       "program_studi": "[{\"id\":\"8906cf66-5ad3-415f-af05-602c625ac06f\",\"title\":\"Elektronika\"},{\"id\":\"de00a9f9-9933-405a-9ef9-d848e9678de2\",\"title\":\"Pendidikan Teknik Elektronika\"},{\"id\":\"2b263bf1-305b-4375-ae40-c6233867a141\",\"title\":\"Pendidikan Vokasional Teknik Elektronika\"},{\"id\":\"8b6ace77-5ccd-4376-a5bd-73366799e9b6\",\"title\":\"Teknik Elektronika\"},{\"id\":\"52399b14-9696-43ec-b72a-aefdb4bf3bc4\",\"title\":\"Teknik Elektronika Manufaktur\"}]",
       "jenjang": "[\"Diploma\"]",
       "ref_status_posisi": {
@@ -7367,7 +7367,7 @@
       "id_jenis_kelamin": null,
       "id_status_posisi": 2,
       "jumlah_kuota": 1,
-      "jumlah_terdaftar": 11,
+      "jumlah_terdaftar": 16,
       "program_studi": "[{\"id\":\"d313fb83-bdb0-4556-951b-aeefcc5ba463\",\"title\":\"Teknologi Laboratorium Medis\"},{\"id\":\"bdee0b72-7d4b-4cc8-ac46-198a6427c84b\",\"title\":\"Teknologi Laboratorium Medik\"}]",
       "jenjang": "[\"Diploma\"]",
       "ref_status_posisi": {
@@ -7516,5 +7516,6 @@
       "to": 700,
       "total": 767
     }
-  }
+  },
+  "_scraped_at": "2025-11-10T11:32:32.427826+00:00"
 }
