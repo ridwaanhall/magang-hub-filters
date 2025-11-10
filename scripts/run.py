@@ -41,12 +41,45 @@ def main(argv: Optional[list[str]] = None) -> int:
 
     args = p.parse_args(argv)
 
-    data_dir = Path(args.dir)
-    if not data_dir.exists():
-        logger.error("Data directory does not exist: %s", data_dir)
-        return 2
+    # allow special value 'all' to mean all subdirectories inside the repo `data/` folder
+    dir_arg = args.dir
+    if dir_arg != "all":
+        data_dir = Path(dir_arg)
+        if not data_dir.exists():
+            logger.error("Data directory does not exist: %s", data_dir)
+            return 2
+    else:
+        # base data directory
+        data_dir = Path("data")
+        if not data_dir.exists() or not any(data_dir.iterdir()):
+            logger.error("Data directory does not exist or is empty: %s", data_dir)
+            return 2
 
-    search = VacancySearch(data_dir)
+    # helper: iterate items from target (single dir or all subdirs)
+    def iter_items_from_target():
+        if dir_arg == "all":
+            # iterate through subdirectories of data in sorted order
+            subs = sorted([d for d in data_dir.iterdir() if d.is_dir()], key=lambda p: p.name)
+            for sub in subs:
+                for it in VacancySearch(sub).iter_items():
+                    yield it
+        else:
+            for it in VacancySearch(data_dir).iter_items():
+                yield it
+
+    # helper: search across one dir or all subdirs (respect limit)
+    def search_deep_multi(query, limit=None, mode="and"):
+        out = []
+        if dir_arg == "all":
+            subs = sorted([d for d in data_dir.iterdir() if d.is_dir()], key=lambda p: p.name)
+            for sub in subs:
+                remaining = None if limit is None else max(0, limit - len(out))
+                res = VacancySearch(sub).search_deep(query, limit=remaining, mode=mode)
+                out.extend(res)
+                if limit is not None and len(out) >= limit:
+                    break
+            return out
+        return VacancySearch(data_dir).search_deep(query, limit=limit, mode=mode)
 
     # If structured filters provided, run a field-specific search. Within each
     # field tokens are treated as OR (match any). The overall combination is
@@ -112,13 +145,13 @@ def main(argv: Optional[list[str]] = None) -> int:
                     return True
             return False
 
-        for item in search.iter_items():
+        for item in iter_items_from_target():
             if matches_kab(item) and matches_program(item) and matches_posisi(item) and matches_deskripsi(item):
                 results.append(item)
                 if args.limit is not None and len(results) >= args.limit:
                     break
     else:
-        results = search.search_deep(args.deep, limit=args.limit, mode=args.mode)
+        results = search_deep_multi(args.deep, limit=args.limit, mode=args.mode)
 
     # Compute probability and prepare table rows
     rows = []
