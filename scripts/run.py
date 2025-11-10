@@ -139,7 +139,22 @@ def main(argv: Optional[list[str]] = None) -> int:
         def matches_deskripsi(item) -> bool:
             if not desc_tokens:
                 return True
-            text = (item.get("deskripsi_posisi") or "").lower()
+            parts = []
+            # position description
+            if item.get("deskripsi_posisi"):
+                parts.append(str(item.get("deskripsi_posisi")))
+            # also consider the posisi/title (sometimes keywords appear there)
+            if item.get("posisi"):
+                parts.append(str(item.get("posisi")))
+            # company description may contain keywords related to required tech
+            cp = item.get("perusahaan") or {}
+            if cp.get("deskripsi_perusahaan"):
+                parts.append(str(cp.get("deskripsi_perusahaan")))
+            # additional fields like syarat_khusus
+            if item.get("syarat_khusus"):
+                parts.append(str(item.get("syarat_khusus")))
+
+            text = "\n".join(parts).lower()
             for tok in desc_tokens:
                 if tok in text:
                     return True
