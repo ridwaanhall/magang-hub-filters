@@ -28,9 +28,16 @@ logger = logging.getLogger(__name__)
 def main(argv: Optional[list[str]] = None) -> int:
     p = argparse.ArgumentParser(description="Deep search saved MagangHub vacancy pages")
     p.add_argument("--dir", default="data", help="Directory containing per-page JSON files")
-    p.add_argument("--deep", required=True, help="Deep query string (space-separated tokens) to search for")
+    p.add_argument("--deep", required=False, default=None, help="Deep query string (space-separated tokens) to search for; optional when using structured filters")
     p.add_argument("--limit", type=int, default=None, help="Maximum number of results to return")
+    p.add_argument("--mode", choices=["and", "or"], default="or", help="Search mode: 'and' (all tokens) or 'or' (any token). Default: or")
+    # Structured filters
+    p.add_argument("--nama_kabupaten", default=None, help="Filter by one or more kabupaten names (space-separated, treated as OR)")
+    p.add_argument("--program_studi", default=None, help="Filter by program studi titles (space-separated, treated as OR)")
+    p.add_argument("--posisi", default=None, help="Filter by posisi/role text (space-separated, treated as OR)")
+    p.add_argument("--deskripsi_posisi", default=None, help="Filter by words in deskripsi_posisi (space-separated, treated as OR)")
     p.add_argument("--out", default=None, help="Optional output JSON file to write results")
+    p.add_argument("--accept", choices=["desc", "asc"], default=None, help="Sort results by acceptance percentage: 'desc' or 'asc'")
 
     args = p.parse_args(argv)
 
@@ -40,7 +47,78 @@ def main(argv: Optional[list[str]] = None) -> int:
         return 2
 
     search = VacancySearch(data_dir)
-    results = search.search_deep(args.deep, limit=args.limit)
+
+    # If structured filters provided, run a field-specific search. Within each
+    # field tokens are treated as OR (match any). The overall combination is
+    # AND across fields (item must satisfy all provided filters).
+    structured = any([args.nama_kabupaten, args.program_studi, args.posisi, args.deskripsi_posisi])
+
+    # Require at least one filter: either --deep or at least one structured flag
+    if not structured and not args.deep:
+        p.error("either --deep or at least one structured filter (--nama_kabupaten/--program_studi/--posisi) must be provided")
+
+    results = []
+    if structured:
+        # import helper to parse program_studi values
+        from maganghub_client.search import _parse_program_studi
+
+        # prepare token lists (lowercased)
+        nk_tokens = [t.lower() for t in (args.nama_kabupaten or "").split() if t.strip()]
+        ps_tokens = [t.lower() for t in (args.program_studi or "").split() if t.strip()]
+        pos_tokens = [t.lower() for t in (args.posisi or "").split() if t.strip()]
+        desc_tokens = [t.lower() for t in (args.deskripsi_posisi or "").split() if t.strip()]
+
+        def matches_kab(item) -> bool:
+            if not nk_tokens:
+                return True
+            cp = item.get("perusahaan") or {}
+            raw_kab = (cp.get("nama_kabupaten") or "")
+            clean_kab = raw_kab.replace("KAB.", "").replace("KAB", "").replace("KOTA.", "").replace("KOTA", "").replace(".", "").strip().lower()
+            prov = (cp.get("nama_provinsi") or "").lower()
+            # match any token against cleaned kabupaten or province
+            for tok in nk_tokens:
+                if tok in clean_kab or tok in prov:
+                    return True
+            return False
+
+        def matches_program(item) -> bool:
+            if not ps_tokens:
+                return True
+            titles = [t.lower() for t in _parse_program_studi(item.get("program_studi"))]
+            for tok in ps_tokens:
+                for title in titles:
+                    if tok in title:
+                        return True
+            return False
+
+        def matches_posisi(item) -> bool:
+            if not pos_tokens:
+                return True
+            text_parts = []
+            if item.get("posisi"):
+                text_parts.append(str(item.get("posisi")))
+            text = "\n".join(text_parts).lower()
+            for tok in pos_tokens:
+                if tok in text:
+                    return True
+            return False
+
+        def matches_deskripsi(item) -> bool:
+            if not desc_tokens:
+                return True
+            text = (item.get("deskripsi_posisi") or "").lower()
+            for tok in desc_tokens:
+                if tok in text:
+                    return True
+            return False
+
+        for item in search.iter_items():
+            if matches_kab(item) and matches_program(item) and matches_posisi(item) and matches_deskripsi(item):
+                results.append(item)
+                if args.limit is not None and len(results) >= args.limit:
+                    break
+    else:
+        results = search.search_deep(args.deep, limit=args.limit, mode=args.mode)
 
     # Compute probability and prepare table rows
     rows = []
@@ -97,6 +175,23 @@ def main(argv: Optional[list[str]] = None) -> int:
         item_copy["_applicants_per_slot"] = applicants_per_slot
         item_copy["_acceptance_prob"] = acceptance_prob
         enriched_results.append(item_copy)
+
+    # Optionally sort by acceptance percentage if requested
+    if args.accept and enriched_results:
+        if args.accept == "desc":
+            # None -> treat as -1 so they go to the end
+            sort_key = lambda it: (it.get("_acceptance_prob") if it.get("_acceptance_prob") is not None else -1)
+            reverse = True
+        else:
+            # asc: None -> put at end
+            sort_key = lambda it: (it.get("_acceptance_prob") if it.get("_acceptance_prob") is not None else float("inf"))
+            reverse = False
+
+        paired = list(zip(rows, enriched_results))
+        paired.sort(key=lambda pair: sort_key(pair[1]), reverse=reverse)
+        rows, enriched_results = zip(*paired) if paired else ([], [])
+        rows = list(rows)
+        enriched_results = list(enriched_results)
 
     # Try to pretty-print a table using tabulate if available
     try:

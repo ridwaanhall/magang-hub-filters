@@ -126,22 +126,31 @@ class VacancySearch:
         # join and lowercase for simple substring search
         return "\n".join(parts).lower()
 
-    def search_deep(self, query: str, limit: Optional[int] = None) -> List[Dict[str, Any]]:
-        """Search items using a whitespace tokenized AND query.
+    def search_deep(self, query: str, limit: Optional[int] = None, mode: str = "and") -> List[Dict[str, Any]]:
+        """Search items using a whitespace tokenized query.
+
+        mode: "and" (default) requires all tokens to be present in an item.
+        mode: "or" returns items where any token is present.
 
         Returns matching raw items (not converted to Vacancy dataclass).
         """
         if not query:
             return []
         tokens = [t.strip().lower() for t in query.split() if t.strip()]
+        if not tokens:
+            return []
+        mode = (mode or "and").lower()
+        if mode not in ("and", "or"):
+            raise ValueError("mode must be 'and' or 'or'")
+
         out: List[Dict[str, Any]] = []
         for item in self.iter_items():
             text = self._make_search_text(item)
-            matched = True
-            for tok in tokens:
-                if tok not in text:
-                    matched = False
-                    break
+            if mode == "and":
+                matched = all(tok in text for tok in tokens)
+            else:
+                matched = any(tok in text for tok in tokens)
+
             if matched:
                 out.append(item)
                 if limit is not None and len(out) >= limit:
