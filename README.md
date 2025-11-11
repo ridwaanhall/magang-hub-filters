@@ -1,4 +1,4 @@
-MagangHub Vacancies — scraper and search tools
+MagangHub Kemnaker RI Filters — scraper and search tools
 =============================================
 
 A small, professional command-line toolkit to scrape the MagangHub public
