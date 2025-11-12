@@ -1,9 +1,684 @@
 {
   "data": [
     {
-      "id_posisi": "a054d49c-0fcd-4712-ac96-d3563f8958bf",
-      "posisi": "Customer Relation",
-      "deskripsi_posisi": "• Pendidikan minimal S1 dari jurusan relevan.\n• Mahir berkomunikasi, melakukan presentasi, dan negosiasi secara efektif.\n• Memiliki kemampuan analitis yang kuat, mampu bekerja dengan data, gesit, dan peka terhadap peluang bisnis.\n• Menyukai tantangan dan mampu bekerja dalam lingkungan yang dinamis.\n• Senang bersosialisasi, berpikir kritis, percaya diri, mature, serta memiliki motivasi dan kemandirian tinggi (self-driven).",
+      "id_posisi": "a05410ad-4947-4255-b2b0-aff8eeb7ab7b",
+      "posisi": "Staff Administrasi",
+      "deskripsi_posisi": "Melaksanakan kegiatan administrasi harian seperti surat-menyurat, pengarsipan, pencatatan, dan pengelolaan dokumen lembaga.\n\nMelakukan input dan pembaruan data ke dalam sistem administrasi (keuangan, kepegawaian, akademik, atau umum).\n\nMembantu penyusunan laporan kegiatan, notulen rapat, dan rekapitulasi data.\n\nMengatur jadwal, agenda rapat, dan koordinasi kegiatan antar unit kerja.\n\nMenyusun dan mendistribusikan surat masuk dan keluar serta memastikan dokumen terdokumentasi dengan baik.\n\nMelayani kebutuhan informasi administrasi dari pimpinan, staf, mahasiswa, atau pihak eksternal.\n\nMembantu pengelolaan keuangan sederhana seperti pengajuan anggaran, pencatatan kas kecil, dan pelaporan biaya operasional.\n\nMenjaga kerapian dan keteraturan arsip baik dalam bentuk fisik maupun digital.",
+      "syarat_khusus": null,
+      "usia_minimal": null,
+      "usia_maksimal": null,
+      "revisi": null,
+      "id_kondisi_fisik": null,
+      "id_program": "0220df5a-e32b-4d67-a943-7c0fde21ad52",
+      "created_at": "2025-11-04 13:52:35",
+      "updated_at": "2025-11-04 13:55:54",
+      "kode_kbji": null,
+      "penempatan": null,
+      "id_jenis_kelamin": null,
+      "id_status_posisi": 2,
+      "jumlah_kuota": 1,
+      "jumlah_terdaftar": 4,
+      "program_studi": "[{\"id\":\"44c12a8c-7a88-47ea-87fb-0e7202a1390d\",\"title\":\"Administrasi\"},{\"id\":\"2f6440b7-d057-40e7-bce1-9a4cf73f441d\",\"title\":\"Manajemen\"}]",
+      "jenjang": "[\"Diploma\",\"Sarjana\"]",
+      "ref_status_posisi": {
+        "id_status_posisi": 2,
+        "nama_status_posisi": "Terverifikasi"
+      },
+      "program": {
+        "id_program": "0220df5a-e32b-4d67-a943-7c0fde21ad52",
+        "id_sumber_dana": null,
+        "id_perusahaan": "73781506-dd95-4e5f-afa2-7a55508a623a",
+        "id_jadwal": "48039861-1251-474e-86af-d904e829093b"
+      },
+      "perusahaan": {
+        "id_perusahaan": "73781506-dd95-4e5f-afa2-7a55508a623a",
+        "id_desa": null,
+        "nama_perusahaan": "Pendidikan Gunungkidul",
+        "deskripsi_perusahaan": null,
+        "alamat": "Selang II",
+        "logo": "https://wlkp-assets.kemnaker.go.id/companies/ae18c581-4401-433b-82c4-4506f7a8f20c/6905a2e796f94.png",
+        "banner": "https://wlkp-assets.kemnaker.go.id/companies/ae18c581-4401-433b-82c4-4506f7a8f20c/6905a43ae1d8f.jpeg",
+        "created_at": "2025-11-04 13:52:35",
+        "updated_at": "2025-11-04 13:55:54",
+        "kode_kabupaten": "3403",
+        "nama_kabupaten": "KAB. GUNUNGKIDUL",
+        "kode_provinsi": "34",
+        "nama_provinsi": "DAERAH ISTIMEWA YOGYAKARTA"
+      },
+      "jadwal": {
+        "id_jadwal": "48039861-1251-474e-86af-d904e829093b",
+        "angkatan": "2",
+        "tanggal_batas_pendaftaran": "2025-10-03 00:00:00",
+        "tanggal_mulai": "2025-11-24 00:00:00",
+        "tanggal_selesai": "2026-05-23 23:59:59",
+        "tahun": "2025",
+        "tanggal_rencana_mulai": "2025-10-24 00:00:00",
+        "tanggal_rencana_akhir": "2025-11-12 23:59:59",
+        "tanggal_seleksi_mulai": "2025-11-12 00:00:00",
+        "tanggal_seleksi_akhir": "2025-11-20 23:59:59",
+        "tanggal_usulan_mulai": "2025-10-01 00:00:00",
+        "tanggal_usulan_akhir": "2025-10-08 00:00:00",
+        "tanggal_persetujuan_awal": "2025-10-05 00:00:00",
+        "tanggal_persetujuan_akhir": "2025-10-06 00:00:00",
+        "tanggal_pendaftaran_awal": "2025-11-06 00:00:00",
+        "tanggal_pendaftaran_akhir": "2025-11-14 23:59:59",
+        "tanggal_pengumuman_mulai": "2025-11-12 00:00:00",
+        "tanggal_pengumuman_akhir": "2025-11-20 23:59:59",
+        "tanggal_lulus_awal": "2024-11-01 00:00:00",
+        "tanggal_lulus_akhir": "2025-10-31 00:00:00",
+        "publish": 1
+      },
+      "government_agency": {
+        "government_agency_name": null
+      },
+      "sub_government_agency": {
+        "sub_government_agency_name": null
+      }
+    },
+    {
+      "id_posisi": "a0543172-dabe-4218-a18c-545640f6f1cb",
+      "posisi": "Juru Bahasa Isyarat",
+      "deskripsi_posisi": "1. Menjadi penerjemah bagi pengguna layanan penyandang disabilitas rungu.\n2. Membantu komunikasi antara petugas dan Masyarakat \n3. Memberikan pelatihan dasar bahasa isyarat bagi pegawai layanan publik. \n4. Menjaga kerahasiaan informasi pengguna layanan",
+      "syarat_khusus": null,
+      "usia_minimal": null,
+      "usia_maksimal": null,
+      "revisi": null,
+      "id_kondisi_fisik": null,
+      "id_program": "1c2d57f1-01c4-41b0-b78d-3d9ed1ead578",
+      "created_at": "2025-11-10 19:48:17",
+      "updated_at": "2025-11-10 19:48:17",
+      "kode_kbji": null,
+      "penempatan": null,
+      "id_jenis_kelamin": null,
+      "id_status_posisi": 2,
+      "jumlah_kuota": 1,
+      "jumlah_terdaftar": 1,
+      "program_studi": "[{\"id\":\"e8c70238-7674-43ed-88c3-4541c5717a0b\",\"title\":\"Pendidikan Luar Biasa\"}]",
+      "jenjang": "[\"Sarjana\"]",
+      "ref_status_posisi": {
+        "id_status_posisi": 2,
+        "nama_status_posisi": "Terverifikasi"
+      },
+      "program": {
+        "id_program": "1c2d57f1-01c4-41b0-b78d-3d9ed1ead578",
+        "id_sumber_dana": null,
+        "id_perusahaan": "0ef13633-e9eb-403e-a219-a763a8ba108e",
+        "id_jadwal": "48039861-1251-474e-86af-d904e829093b"
+      },
+      "perusahaan": {
+        "id_perusahaan": "0ef13633-e9eb-403e-a219-a763a8ba108e",
+        "id_desa": null,
+        "nama_perusahaan": "KANTOR WILAYAH DIREKTORAT JENDERAL IMIGRASI D.I. YOGYAKARTA",
+        "deskripsi_perusahaan": null,
+        "alamat": "Jl. Gedongkuning 174, Rejowinangun, Kotagede, Yogyakarta",
+        "logo": "https://maganghub.kemnaker.go.id/be/v1/storage/uploads/logo/2025/11/47t8vlmVD066dGYKAW7SQp7n9WJI0tGRoQCv5LVv.png",
+        "banner": null,
+        "created_at": "2025-11-10 19:48:17",
+        "updated_at": "2025-11-10 19:48:17",
+        "kode_kabupaten": "3471",
+        "nama_kabupaten": "KOTA YOGYAKARTA",
+        "kode_provinsi": "34",
+        "nama_provinsi": "DAERAH ISTIMEWA YOGYAKARTA"
+      },
+      "jadwal": {
+        "id_jadwal": "48039861-1251-474e-86af-d904e829093b",
+        "angkatan": "2",
+        "tanggal_batas_pendaftaran": "2025-10-03 00:00:00",
+        "tanggal_mulai": "2025-11-24 00:00:00",
+        "tanggal_selesai": "2026-05-23 23:59:59",
+        "tahun": "2025",
+        "tanggal_rencana_mulai": "2025-10-24 00:00:00",
+        "tanggal_rencana_akhir": "2025-11-12 23:59:59",
+        "tanggal_seleksi_mulai": "2025-11-12 00:00:00",
+        "tanggal_seleksi_akhir": "2025-11-20 23:59:59",
+        "tanggal_usulan_mulai": "2025-10-01 00:00:00",
+        "tanggal_usulan_akhir": "2025-10-08 00:00:00",
+        "tanggal_persetujuan_awal": "2025-10-05 00:00:00",
+        "tanggal_persetujuan_akhir": "2025-10-06 00:00:00",
+        "tanggal_pendaftaran_awal": "2025-11-06 00:00:00",
+        "tanggal_pendaftaran_akhir": "2025-11-14 23:59:59",
+        "tanggal_pengumuman_mulai": "2025-11-12 00:00:00",
+        "tanggal_pengumuman_akhir": "2025-11-20 23:59:59",
+        "tanggal_lulus_awal": "2024-11-01 00:00:00",
+        "tanggal_lulus_akhir": "2025-10-31 00:00:00",
+        "publish": 1
+      },
+      "government_agency": {
+        "government_agency_name": "Kementerian Imigrasi dan Pemasyarakatan"
+      },
+      "sub_government_agency": {
+        "sub_government_agency_name": "KANTOR WILAYAH DIREKTORAT JENDERAL IMIGRASI D.I. YOGYAKARTA"
+      }
+    },
+    {
+      "id_posisi": "a0540679-585a-4e7c-b302-fc89eb4173ae",
+      "posisi": "Quality Assurance Engineer",
+      "deskripsi_posisi": "1. Menyusun dan menjalankan test plan, test case, serta skenario pengujian berdasarkan requirement sistem.\n2. Melakukan pengujian manual maupun otomatis terhadap aplikasi web, mobile, dan API.\n3. Mencatat dan melaporkan bug menggunakan tools seperti Jira, Trello, atau GitLab.\n4. Berkolaborasi dengan tim developer dan product untuk memastikan kualitas dan stabilitas produk sebelum rilis.\n5. Membuat dokumentasi hasil uji dan laporan QA untuk keperluan evaluasi.\n6. Mengembangkan dan memelihara automated testing tools guna meningkatkan efisiensi proses QA.",
+      "syarat_khusus": null,
+      "usia_minimal": null,
+      "usia_maksimal": null,
+      "revisi": null,
+      "id_kondisi_fisik": null,
+      "id_program": "3fdda194-f25e-43b8-9f00-29de9eb5f533",
+      "created_at": "2025-11-10 13:10:03",
+      "updated_at": "2025-11-10 13:12:45",
+      "kode_kbji": null,
+      "penempatan": null,
+      "id_jenis_kelamin": null,
+      "id_status_posisi": 2,
+      "jumlah_kuota": 1,
+      "jumlah_terdaftar": 1,
+      "program_studi": "[{\"id\":\"82234680-60f4-4f47-bba4-4aa62562c9aa\",\"title\":\"Sistem dan Teknologi Informasi\"},{\"id\":\"0c353635-be19-41e3-abef-287c8fd73d32\",\"title\":\"Teknologi Informasi\"},{\"id\":\"4f35d0cf-f012-455a-8c9d-9a95f9322ad8\",\"title\":\"Sistem Dan Teknologi Informasi\"}]",
+      "jenjang": "[\"Sarjana\",\"Diploma\"]",
+      "ref_status_posisi": {
+        "id_status_posisi": 2,
+        "nama_status_posisi": "Terverifikasi"
+      },
+      "program": {
+        "id_program": "3fdda194-f25e-43b8-9f00-29de9eb5f533",
+        "id_sumber_dana": null,
+        "id_perusahaan": "45c41080-97ca-45ff-8bad-2f4e2fd54486",
+        "id_jadwal": "48039861-1251-474e-86af-d904e829093b"
+      },
+      "perusahaan": {
+        "id_perusahaan": "45c41080-97ca-45ff-8bad-2f4e2fd54486",
+        "id_desa": null,
+        "nama_perusahaan": "Merapi Tani Instrumen",
+        "deskripsi_perusahaan": null,
+        "alamat": "CEBONGAN LOR",
+        "logo": "https://wlkp-assets.kemnaker.go.id/companies/dc6e0b24-113a-4048-92b8-9a123a9567cb/6911673fecd21.jpg",
+        "banner": "https://wlkp-assets.kemnaker.go.id/companies/dc6e0b24-113a-4048-92b8-9a123a9567cb/69116785d8f27.jpg",
+        "created_at": "2025-11-10 13:10:03",
+        "updated_at": "2025-11-10 13:12:45",
+        "kode_kabupaten": "3404",
+        "nama_kabupaten": "KAB. SLEMAN",
+        "kode_provinsi": "34",
+        "nama_provinsi": "DAERAH ISTIMEWA YOGYAKARTA"
+      },
+      "jadwal": {
+        "id_jadwal": "48039861-1251-474e-86af-d904e829093b",
+        "angkatan": "2",
+        "tanggal_batas_pendaftaran": "2025-10-03 00:00:00",
+        "tanggal_mulai": "2025-11-24 00:00:00",
+        "tanggal_selesai": "2026-05-23 23:59:59",
+        "tahun": "2025",
+        "tanggal_rencana_mulai": "2025-10-24 00:00:00",
+        "tanggal_rencana_akhir": "2025-11-12 23:59:59",
+        "tanggal_seleksi_mulai": "2025-11-12 00:00:00",
+        "tanggal_seleksi_akhir": "2025-11-20 23:59:59",
+        "tanggal_usulan_mulai": "2025-10-01 00:00:00",
+        "tanggal_usulan_akhir": "2025-10-08 00:00:00",
+        "tanggal_persetujuan_awal": "2025-10-05 00:00:00",
+        "tanggal_persetujuan_akhir": "2025-10-06 00:00:00",
+        "tanggal_pendaftaran_awal": "2025-11-06 00:00:00",
+        "tanggal_pendaftaran_akhir": "2025-11-14 23:59:59",
+        "tanggal_pengumuman_mulai": "2025-11-12 00:00:00",
+        "tanggal_pengumuman_akhir": "2025-11-20 23:59:59",
+        "tanggal_lulus_awal": "2024-11-01 00:00:00",
+        "tanggal_lulus_akhir": "2025-10-31 00:00:00",
+        "publish": 1
+      },
+      "government_agency": {
+        "government_agency_name": null
+      },
+      "sub_government_agency": {
+        "sub_government_agency_name": null
+      }
+    },
+    {
+      "id_posisi": "a0543297-b034-40c7-9cac-420de811f7bd",
+      "posisi": "Content Production & Editor",
+      "deskripsi_posisi": "1. Memproduksi konten dalam bentuk audio, foto, dan video sesuai kebutuhan perusahaan\n2. Melakukan perawatan terhadap aset produksi konten/studio\n3. Melakukan atau mewakilkan kegiatan dokumentasi kegiatan lapangan\n4. Melakukan editing terhadap bahan konten",
+      "syarat_khusus": null,
+      "usia_minimal": null,
+      "usia_maksimal": null,
+      "revisi": null,
+      "id_kondisi_fisik": null,
+      "id_program": "3fdda194-f25e-43b8-9f00-29de9eb5f533",
+      "created_at": "2025-11-10 13:10:03",
+      "updated_at": "2025-11-10 13:12:45",
+      "kode_kbji": null,
+      "penempatan": null,
+      "id_jenis_kelamin": null,
+      "id_status_posisi": 2,
+      "jumlah_kuota": 1,
+      "jumlah_terdaftar": 1,
+      "program_studi": "[{\"id\":\"e90b7fe8-f4a5-4a1c-85f8-e929004b29e1\",\"title\":\"Desain Grafis\"},{\"id\":\"9dfcaa37-a44b-4331-87ab-bd32dc1066cb\",\"title\":\"Desain Komunikasi Visual\"},{\"id\":\"e2843b4a-1c93-44b9-bafd-c667c91efd9c\",\"title\":\"Desain Media\"}]",
+      "jenjang": "[\"Diploma\",\"Sarjana\"]",
+      "ref_status_posisi": {
+        "id_status_posisi": 2,
+        "nama_status_posisi": "Terverifikasi"
+      },
+      "program": {
+        "id_program": "3fdda194-f25e-43b8-9f00-29de9eb5f533",
+        "id_sumber_dana": null,
+        "id_perusahaan": "45c41080-97ca-45ff-8bad-2f4e2fd54486",
+        "id_jadwal": "48039861-1251-474e-86af-d904e829093b"
+      },
+      "perusahaan": {
+        "id_perusahaan": "45c41080-97ca-45ff-8bad-2f4e2fd54486",
+        "id_desa": null,
+        "nama_perusahaan": "Merapi Tani Instrumen",
+        "deskripsi_perusahaan": null,
+        "alamat": "CEBONGAN LOR",
+        "logo": "https://wlkp-assets.kemnaker.go.id/companies/dc6e0b24-113a-4048-92b8-9a123a9567cb/6911673fecd21.jpg",
+        "banner": "https://wlkp-assets.kemnaker.go.id/companies/dc6e0b24-113a-4048-92b8-9a123a9567cb/69116785d8f27.jpg",
+        "created_at": "2025-11-10 13:10:03",
+        "updated_at": "2025-11-10 13:12:45",
+        "kode_kabupaten": "3404",
+        "nama_kabupaten": "KAB. SLEMAN",
+        "kode_provinsi": "34",
+        "nama_provinsi": "DAERAH ISTIMEWA YOGYAKARTA"
+      },
+      "jadwal": {
+        "id_jadwal": "48039861-1251-474e-86af-d904e829093b",
+        "angkatan": "2",
+        "tanggal_batas_pendaftaran": "2025-10-03 00:00:00",
+        "tanggal_mulai": "2025-11-24 00:00:00",
+        "tanggal_selesai": "2026-05-23 23:59:59",
+        "tahun": "2025",
+        "tanggal_rencana_mulai": "2025-10-24 00:00:00",
+        "tanggal_rencana_akhir": "2025-11-12 23:59:59",
+        "tanggal_seleksi_mulai": "2025-11-12 00:00:00",
+        "tanggal_seleksi_akhir": "2025-11-20 23:59:59",
+        "tanggal_usulan_mulai": "2025-10-01 00:00:00",
+        "tanggal_usulan_akhir": "2025-10-08 00:00:00",
+        "tanggal_persetujuan_awal": "2025-10-05 00:00:00",
+        "tanggal_persetujuan_akhir": "2025-10-06 00:00:00",
+        "tanggal_pendaftaran_awal": "2025-11-06 00:00:00",
+        "tanggal_pendaftaran_akhir": "2025-11-14 23:59:59",
+        "tanggal_pengumuman_mulai": "2025-11-12 00:00:00",
+        "tanggal_pengumuman_akhir": "2025-11-20 23:59:59",
+        "tanggal_lulus_awal": "2024-11-01 00:00:00",
+        "tanggal_lulus_akhir": "2025-10-31 00:00:00",
+        "publish": 1
+      },
+      "government_agency": {
+        "government_agency_name": null
+      },
+      "sub_government_agency": {
+        "sub_government_agency_name": null
+      }
+    },
+    {
+      "id_posisi": "a054313f-337f-4ef1-a25c-96df879964fb",
+      "posisi": "Backend Engineer",
+      "deskripsi_posisi": "1. Mengembangkan dan memastikan kinerja dashboard monitoring dan controlling device IoT\n2. Berkolaborasi dengan anggota tim lain untuk merancang dan mengimplementasikan solusi perangkat lunak.\n3. Menulis kode yang bersih, efisien, dan mudah dipelihara.\n4. Menguji dan debugging kode untuk mengidentifikasi dan menyelesaikan masalah dengan segera.\n5. Berkontribusi pada peningkatan aplikasi perangkat lunak yang ada\n6. Berkomunikasi secara efektif baik tertulis maupun lisan.",
+      "syarat_khusus": null,
+      "usia_minimal": null,
+      "usia_maksimal": null,
+      "revisi": null,
+      "id_kondisi_fisik": null,
+      "id_program": "3fdda194-f25e-43b8-9f00-29de9eb5f533",
+      "created_at": "2025-11-10 13:10:03",
+      "updated_at": "2025-11-10 13:12:45",
+      "kode_kbji": null,
+      "penempatan": null,
+      "id_jenis_kelamin": null,
+      "id_status_posisi": 2,
+      "jumlah_kuota": 1,
+      "jumlah_terdaftar": 0,
+      "program_studi": "[{\"id\":\"ae73f44b-835b-498b-a10a-95eaa32fbe0b\",\"title\":\"Sistem Informasi\"},{\"id\":\"0c353635-be19-41e3-abef-287c8fd73d32\",\"title\":\"Teknologi Informasi\"},{\"id\":\"82234680-60f4-4f47-bba4-4aa62562c9aa\",\"title\":\"Sistem dan Teknologi Informasi\"}]",
+      "jenjang": "[\"Sarjana\",\"Diploma\"]",
+      "ref_status_posisi": {
+        "id_status_posisi": 2,
+        "nama_status_posisi": "Terverifikasi"
+      },
+      "program": {
+        "id_program": "3fdda194-f25e-43b8-9f00-29de9eb5f533",
+        "id_sumber_dana": null,
+        "id_perusahaan": "45c41080-97ca-45ff-8bad-2f4e2fd54486",
+        "id_jadwal": "48039861-1251-474e-86af-d904e829093b"
+      },
+      "perusahaan": {
+        "id_perusahaan": "45c41080-97ca-45ff-8bad-2f4e2fd54486",
+        "id_desa": null,
+        "nama_perusahaan": "Merapi Tani Instrumen",
+        "deskripsi_perusahaan": null,
+        "alamat": "CEBONGAN LOR",
+        "logo": "https://wlkp-assets.kemnaker.go.id/companies/dc6e0b24-113a-4048-92b8-9a123a9567cb/6911673fecd21.jpg",
+        "banner": "https://wlkp-assets.kemnaker.go.id/companies/dc6e0b24-113a-4048-92b8-9a123a9567cb/69116785d8f27.jpg",
+        "created_at": "2025-11-10 13:10:03",
+        "updated_at": "2025-11-10 13:12:45",
+        "kode_kabupaten": "3404",
+        "nama_kabupaten": "KAB. SLEMAN",
+        "kode_provinsi": "34",
+        "nama_provinsi": "DAERAH ISTIMEWA YOGYAKARTA"
+      },
+      "jadwal": {
+        "id_jadwal": "48039861-1251-474e-86af-d904e829093b",
+        "angkatan": "2",
+        "tanggal_batas_pendaftaran": "2025-10-03 00:00:00",
+        "tanggal_mulai": "2025-11-24 00:00:00",
+        "tanggal_selesai": "2026-05-23 23:59:59",
+        "tahun": "2025",
+        "tanggal_rencana_mulai": "2025-10-24 00:00:00",
+        "tanggal_rencana_akhir": "2025-11-12 23:59:59",
+        "tanggal_seleksi_mulai": "2025-11-12 00:00:00",
+        "tanggal_seleksi_akhir": "2025-11-20 23:59:59",
+        "tanggal_usulan_mulai": "2025-10-01 00:00:00",
+        "tanggal_usulan_akhir": "2025-10-08 00:00:00",
+        "tanggal_persetujuan_awal": "2025-10-05 00:00:00",
+        "tanggal_persetujuan_akhir": "2025-10-06 00:00:00",
+        "tanggal_pendaftaran_awal": "2025-11-06 00:00:00",
+        "tanggal_pendaftaran_akhir": "2025-11-14 23:59:59",
+        "tanggal_pengumuman_mulai": "2025-11-12 00:00:00",
+        "tanggal_pengumuman_akhir": "2025-11-20 23:59:59",
+        "tanggal_lulus_awal": "2024-11-01 00:00:00",
+        "tanggal_lulus_akhir": "2025-10-31 00:00:00",
+        "publish": 1
+      },
+      "government_agency": {
+        "government_agency_name": null
+      },
+      "sub_government_agency": {
+        "sub_government_agency_name": null
+      }
+    },
+    {
+      "id_posisi": "a0543662-48f8-4fc6-9165-c794b3b49277",
+      "posisi": "Web Developer",
+      "deskripsi_posisi": "1.  Bertanggung jawab untuk melakukan update website perusahaan\n2. Meningkatkan SEO dan Domain Rating untuk masing-masing website perusahaan\n3. Mengembangkan layouting website perusahaan \n4. Mengelola website pendukung perusahaan",
+      "syarat_khusus": null,
+      "usia_minimal": null,
+      "usia_maksimal": null,
+      "revisi": null,
+      "id_kondisi_fisik": null,
+      "id_program": "3fdda194-f25e-43b8-9f00-29de9eb5f533",
+      "created_at": "2025-11-10 13:10:03",
+      "updated_at": "2025-11-10 13:12:45",
+      "kode_kbji": null,
+      "penempatan": null,
+      "id_jenis_kelamin": null,
+      "id_status_posisi": 2,
+      "jumlah_kuota": 1,
+      "jumlah_terdaftar": 3,
+      "program_studi": "[{\"id\":\"0c353635-be19-41e3-abef-287c8fd73d32\",\"title\":\"Teknologi Informasi\"},{\"id\":\"82234680-60f4-4f47-bba4-4aa62562c9aa\",\"title\":\"Sistem dan Teknologi Informasi\"},{\"id\":\"4f35d0cf-f012-455a-8c9d-9a95f9322ad8\",\"title\":\"Sistem Dan Teknologi Informasi\"},{\"id\":\"8bdce5f1-553c-40b4-a5f5-9e5ff9387b60\",\"title\":\"Sistem Informasi\"}]",
+      "jenjang": "[\"Sarjana\",\"Diploma\"]",
+      "ref_status_posisi": {
+        "id_status_posisi": 2,
+        "nama_status_posisi": "Terverifikasi"
+      },
+      "program": {
+        "id_program": "3fdda194-f25e-43b8-9f00-29de9eb5f533",
+        "id_sumber_dana": null,
+        "id_perusahaan": "45c41080-97ca-45ff-8bad-2f4e2fd54486",
+        "id_jadwal": "48039861-1251-474e-86af-d904e829093b"
+      },
+      "perusahaan": {
+        "id_perusahaan": "45c41080-97ca-45ff-8bad-2f4e2fd54486",
+        "id_desa": null,
+        "nama_perusahaan": "Merapi Tani Instrumen",
+        "deskripsi_perusahaan": null,
+        "alamat": "CEBONGAN LOR",
+        "logo": "https://wlkp-assets.kemnaker.go.id/companies/dc6e0b24-113a-4048-92b8-9a123a9567cb/6911673fecd21.jpg",
+        "banner": "https://wlkp-assets.kemnaker.go.id/companies/dc6e0b24-113a-4048-92b8-9a123a9567cb/69116785d8f27.jpg",
+        "created_at": "2025-11-10 13:10:03",
+        "updated_at": "2025-11-10 13:12:45",
+        "kode_kabupaten": "3404",
+        "nama_kabupaten": "KAB. SLEMAN",
+        "kode_provinsi": "34",
+        "nama_provinsi": "DAERAH ISTIMEWA YOGYAKARTA"
+      },
+      "jadwal": {
+        "id_jadwal": "48039861-1251-474e-86af-d904e829093b",
+        "angkatan": "2",
+        "tanggal_batas_pendaftaran": "2025-10-03 00:00:00",
+        "tanggal_mulai": "2025-11-24 00:00:00",
+        "tanggal_selesai": "2026-05-23 23:59:59",
+        "tahun": "2025",
+        "tanggal_rencana_mulai": "2025-10-24 00:00:00",
+        "tanggal_rencana_akhir": "2025-11-12 23:59:59",
+        "tanggal_seleksi_mulai": "2025-11-12 00:00:00",
+        "tanggal_seleksi_akhir": "2025-11-20 23:59:59",
+        "tanggal_usulan_mulai": "2025-10-01 00:00:00",
+        "tanggal_usulan_akhir": "2025-10-08 00:00:00",
+        "tanggal_persetujuan_awal": "2025-10-05 00:00:00",
+        "tanggal_persetujuan_akhir": "2025-10-06 00:00:00",
+        "tanggal_pendaftaran_awal": "2025-11-06 00:00:00",
+        "tanggal_pendaftaran_akhir": "2025-11-14 23:59:59",
+        "tanggal_pengumuman_mulai": "2025-11-12 00:00:00",
+        "tanggal_pengumuman_akhir": "2025-11-20 23:59:59",
+        "tanggal_lulus_awal": "2024-11-01 00:00:00",
+        "tanggal_lulus_akhir": "2025-10-31 00:00:00",
+        "publish": 1
+      },
+      "government_agency": {
+        "government_agency_name": null
+      },
+      "sub_government_agency": {
+        "sub_government_agency_name": null
+      }
+    },
+    {
+      "id_posisi": "a0546e81-e229-4d02-aa69-e1f7f2a1b2f4",
+      "posisi": "Sales and Partnership",
+      "deskripsi_posisi": "1. Mencari dan mengembangkan prospek klien baru dan eksisting.\n2. Menyusun proposal penawaran dan melakukan presentasi.\n3. Bekerja sama dengan tim teknis dalam implementasi solusi.\n4. Menyusun strategi yang berorientasi pada kepuasan pelanggan.\n5. Menganalisa kebutuhan klien untuk pengembangan layanan atau produk tambahan.",
+      "syarat_khusus": null,
+      "usia_minimal": null,
+      "usia_maksimal": null,
+      "revisi": null,
+      "id_kondisi_fisik": null,
+      "id_program": "3fdda194-f25e-43b8-9f00-29de9eb5f533",
+      "created_at": "2025-11-10 13:10:03",
+      "updated_at": "2025-11-10 13:12:45",
+      "kode_kbji": null,
+      "penempatan": null,
+      "id_jenis_kelamin": null,
+      "id_status_posisi": 2,
+      "jumlah_kuota": 1,
+      "jumlah_terdaftar": 0,
+      "program_studi": "[{\"id\":\"93594dd7-0c1d-48c0-8f50-fd4bfde199b3\",\"title\":\"Teknik Elektro\"},{\"id\":\"2af76ee1-e45a-4c6b-8be2-c3aafb23d7c7\",\"title\":\"Elektronika Instrumentasi\"},{\"id\":\"95dd752e-e00f-4431-90bf-58bdd324a48f\",\"title\":\"Ilmu Komunikasi\"},{\"id\":\"d76ee81d-f5ec-4f98-beec-3c4c0c20a642\",\"title\":\"hubungan Internasional\"},{\"id\":\"8631f68c-a0f0-4758-9251-a62190209909\",\"title\":\"Hubungan Masyarakat\"}]",
+      "jenjang": "[\"Diploma\",\"Sarjana\"]",
+      "ref_status_posisi": {
+        "id_status_posisi": 2,
+        "nama_status_posisi": "Terverifikasi"
+      },
+      "program": {
+        "id_program": "3fdda194-f25e-43b8-9f00-29de9eb5f533",
+        "id_sumber_dana": null,
+        "id_perusahaan": "45c41080-97ca-45ff-8bad-2f4e2fd54486",
+        "id_jadwal": "48039861-1251-474e-86af-d904e829093b"
+      },
+      "perusahaan": {
+        "id_perusahaan": "45c41080-97ca-45ff-8bad-2f4e2fd54486",
+        "id_desa": null,
+        "nama_perusahaan": "Merapi Tani Instrumen",
+        "deskripsi_perusahaan": null,
+        "alamat": "CEBONGAN LOR",
+        "logo": "https://wlkp-assets.kemnaker.go.id/companies/dc6e0b24-113a-4048-92b8-9a123a9567cb/6911673fecd21.jpg",
+        "banner": "https://wlkp-assets.kemnaker.go.id/companies/dc6e0b24-113a-4048-92b8-9a123a9567cb/69116785d8f27.jpg",
+        "created_at": "2025-11-10 13:10:03",
+        "updated_at": "2025-11-10 13:12:45",
+        "kode_kabupaten": "3404",
+        "nama_kabupaten": "KAB. SLEMAN",
+        "kode_provinsi": "34",
+        "nama_provinsi": "DAERAH ISTIMEWA YOGYAKARTA"
+      },
+      "jadwal": {
+        "id_jadwal": "48039861-1251-474e-86af-d904e829093b",
+        "angkatan": "2",
+        "tanggal_batas_pendaftaran": "2025-10-03 00:00:00",
+        "tanggal_mulai": "2025-11-24 00:00:00",
+        "tanggal_selesai": "2026-05-23 23:59:59",
+        "tahun": "2025",
+        "tanggal_rencana_mulai": "2025-10-24 00:00:00",
+        "tanggal_rencana_akhir": "2025-11-12 23:59:59",
+        "tanggal_seleksi_mulai": "2025-11-12 00:00:00",
+        "tanggal_seleksi_akhir": "2025-11-20 23:59:59",
+        "tanggal_usulan_mulai": "2025-10-01 00:00:00",
+        "tanggal_usulan_akhir": "2025-10-08 00:00:00",
+        "tanggal_persetujuan_awal": "2025-10-05 00:00:00",
+        "tanggal_persetujuan_akhir": "2025-10-06 00:00:00",
+        "tanggal_pendaftaran_awal": "2025-11-06 00:00:00",
+        "tanggal_pendaftaran_akhir": "2025-11-14 23:59:59",
+        "tanggal_pengumuman_mulai": "2025-11-12 00:00:00",
+        "tanggal_pengumuman_akhir": "2025-11-20 23:59:59",
+        "tanggal_lulus_awal": "2024-11-01 00:00:00",
+        "tanggal_lulus_akhir": "2025-10-31 00:00:00",
+        "publish": 1
+      },
+      "government_agency": {
+        "government_agency_name": null
+      },
+      "sub_government_agency": {
+        "sub_government_agency_name": null
+      }
+    },
+    {
+      "id_posisi": "a05525e5-037c-43e6-a786-d7cd7d46ea87",
+      "posisi": "Administrasi Kantor",
+      "deskripsi_posisi": "Tugas Administrasi Kantor adalah mengelola dan mengoordinasikan kegiatan administratif agar operasional perusahaan berjalan tertib, efisien, dan terorganisir. Seorang staf administrasi kantor bertanggung jawab untuk mengatur arsip dan dokumen, menyusun laporan, menangani surat-menyurat, mencatat keuangan sederhana, serta mendukung kebutuhan administrasi setiap divisi. Mereka juga sering berperan dalam penjadwalan rapat, pengelolaan inventaris kantor, penerimaan tamu, dan distribusi informasi internal. Secara keseluruhan, administrasi kantor menjadi pusat pengelolaan data dan koordinasi yang memastikan semua aktivitas perusahaan berjalan lancar dan sesuai prosedur.",
+      "syarat_khusus": null,
+      "usia_minimal": null,
+      "usia_maksimal": null,
+      "revisi": null,
+      "id_kondisi_fisik": null,
+      "id_program": "3647c183-dc95-4f4a-9e63-f116cd48ca10",
+      "created_at": "2025-11-11 20:43:01",
+      "updated_at": "2025-11-11 21:40:22",
+      "kode_kbji": null,
+      "penempatan": null,
+      "id_jenis_kelamin": null,
+      "id_status_posisi": 2,
+      "jumlah_kuota": 1,
+      "jumlah_terdaftar": 2,
+      "program_studi": "[{\"id\":\"44c12a8c-7a88-47ea-87fb-0e7202a1390d\",\"title\":\"Administrasi\"},{\"id\":\"fb8baadf-4b6f-423a-a499-07e330c61000\",\"title\":\"Administrasi Perkantoran\"},{\"id\":\"5e7e5ffe-e531-43b1-be7f-bec471586a1c\",\"title\":\"Administrasi Perkantoran Digital\"}]",
+      "jenjang": "[\"Diploma\",\"Sarjana\"]",
+      "ref_status_posisi": {
+        "id_status_posisi": 2,
+        "nama_status_posisi": "Terverifikasi"
+      },
+      "program": {
+        "id_program": "3647c183-dc95-4f4a-9e63-f116cd48ca10",
+        "id_sumber_dana": null,
+        "id_perusahaan": "c5df8eb2-d397-43d7-9869-bdb5f50eca22",
+        "id_jadwal": "48039861-1251-474e-86af-d904e829093b"
+      },
+      "perusahaan": {
+        "id_perusahaan": "c5df8eb2-d397-43d7-9869-bdb5f50eca22",
+        "id_desa": null,
+        "nama_perusahaan": "Alumni Menwa Universitas Gadjah Mada",
+        "deskripsi_perusahaan": null,
+        "alamat": "Jl. Magelang KM 8.5 Perum Griya Mlati Indah A-5",
+        "logo": null,
+        "banner": null,
+        "created_at": "2025-11-11 20:43:01",
+        "updated_at": "2025-11-11 21:40:22",
+        "kode_kabupaten": "3404",
+        "nama_kabupaten": "KAB. SLEMAN",
+        "kode_provinsi": "34",
+        "nama_provinsi": "DAERAH ISTIMEWA YOGYAKARTA"
+      },
+      "jadwal": {
+        "id_jadwal": "48039861-1251-474e-86af-d904e829093b",
+        "angkatan": "2",
+        "tanggal_batas_pendaftaran": "2025-10-03 00:00:00",
+        "tanggal_mulai": "2025-11-24 00:00:00",
+        "tanggal_selesai": "2026-05-23 23:59:59",
+        "tahun": "2025",
+        "tanggal_rencana_mulai": "2025-10-24 00:00:00",
+        "tanggal_rencana_akhir": "2025-11-12 23:59:59",
+        "tanggal_seleksi_mulai": "2025-11-12 00:00:00",
+        "tanggal_seleksi_akhir": "2025-11-20 23:59:59",
+        "tanggal_usulan_mulai": "2025-10-01 00:00:00",
+        "tanggal_usulan_akhir": "2025-10-08 00:00:00",
+        "tanggal_persetujuan_awal": "2025-10-05 00:00:00",
+        "tanggal_persetujuan_akhir": "2025-10-06 00:00:00",
+        "tanggal_pendaftaran_awal": "2025-11-06 00:00:00",
+        "tanggal_pendaftaran_akhir": "2025-11-14 23:59:59",
+        "tanggal_pengumuman_mulai": "2025-11-12 00:00:00",
+        "tanggal_pengumuman_akhir": "2025-11-20 23:59:59",
+        "tanggal_lulus_awal": "2024-11-01 00:00:00",
+        "tanggal_lulus_akhir": "2025-10-31 00:00:00",
+        "publish": 1
+      },
+      "government_agency": {
+        "government_agency_name": null
+      },
+      "sub_government_agency": {
+        "sub_government_agency_name": null
+      }
+    },
+    {
+      "id_posisi": "a055367e-27de-432a-b4e5-ed8fc799304d",
+      "posisi": "Sales Development Representative (SDR) Intern",
+      "deskripsi_posisi": "1. Menyusun dan mengelola list prospek berdasarkan ICP (Ideal Customer Profile).\n2. Menjalankan outreach via cold email, cold DM, dan pesan LinkedIn secara profesional dan terstruktur.\n3. Melakukan riset singkat terhadap perusahaan prospek untuk mempersonalisasi pendekatan.\n4. Membantu menjadwalkan meeting antara prospek dengan Business Development/Founder.\n5. Mencatat seluruh interaksi di Google Sheets atau CRM internal\n6. Berkolaborasi dengan tim konten dan sosial media untuk menyelaraskan pesan dengan kampanye yang sedang berjalan.",
+      "syarat_khusus": null,
+      "usia_minimal": null,
+      "usia_maksimal": null,
+      "revisi": null,
+      "id_kondisi_fisik": null,
+      "id_program": "4fce67ca-f947-4e93-97fa-976dc6eabcae",
+      "created_at": "2025-11-11 23:20:13",
+      "updated_at": "2025-11-11 23:28:16",
+      "kode_kbji": null,
+      "penempatan": null,
+      "id_jenis_kelamin": null,
+      "id_status_posisi": 2,
+      "jumlah_kuota": 1,
+      "jumlah_terdaftar": 1,
+      "program_studi": "[{\"id\":\"276643ca-999d-4f19-901c-d5d111941713\",\"title\":\"Administrasi BIsnis\"},{\"id\":\"95dd752e-e00f-4431-90bf-58bdd324a48f\",\"title\":\"Ilmu Komunikasi\"},{\"id\":\"e12302ac-c8dc-4d0a-90a7-402f6fafd27e\",\"title\":\"Manajemen Pemasaran\\/Marketing\"},{\"id\":\"68cab25f-4830-44a8-97f8-9c7a30b98ffc\",\"title\":\"Bisnis dan Manajemen Ritel\"},{\"id\":\"112d50ec-5feb-4a3f-828e-f024b4d0438d\",\"title\":\"Akuntansi Manajemen\"}]",
+      "jenjang": "[\"Sarjana\"]",
+      "ref_status_posisi": {
+        "id_status_posisi": 2,
+        "nama_status_posisi": "Terverifikasi"
+      },
+      "program": {
+        "id_program": "4fce67ca-f947-4e93-97fa-976dc6eabcae",
+        "id_sumber_dana": null,
+        "id_perusahaan": "e83038b2-be1f-4728-9c05-f2e50aef033e",
+        "id_jadwal": "48039861-1251-474e-86af-d904e829093b"
+      },
+      "perusahaan": {
+        "id_perusahaan": "e83038b2-be1f-4728-9c05-f2e50aef033e",
+        "id_desa": null,
+        "nama_perusahaan": "Akselerasi Digital Nusantara",
+        "deskripsi_perusahaan": null,
+        "alamat": "SOMBOMERTEN DEMANGAN NOMOR 189",
+        "logo": null,
+        "banner": null,
+        "created_at": "2025-11-11 23:20:13",
+        "updated_at": "2025-11-11 23:28:16",
+        "kode_kabupaten": "3404",
+        "nama_kabupaten": "KAB. SLEMAN",
+        "kode_provinsi": "34",
+        "nama_provinsi": "DAERAH ISTIMEWA YOGYAKARTA"
+      },
+      "jadwal": {
+        "id_jadwal": "48039861-1251-474e-86af-d904e829093b",
+        "angkatan": "2",
+        "tanggal_batas_pendaftaran": "2025-10-03 00:00:00",
+        "tanggal_mulai": "2025-11-24 00:00:00",
+        "tanggal_selesai": "2026-05-23 23:59:59",
+        "tahun": "2025",
+        "tanggal_rencana_mulai": "2025-10-24 00:00:00",
+        "tanggal_rencana_akhir": "2025-11-12 23:59:59",
+        "tanggal_seleksi_mulai": "2025-11-12 00:00:00",
+        "tanggal_seleksi_akhir": "2025-11-20 23:59:59",
+        "tanggal_usulan_mulai": "2025-10-01 00:00:00",
+        "tanggal_usulan_akhir": "2025-10-08 00:00:00",
+        "tanggal_persetujuan_awal": "2025-10-05 00:00:00",
+        "tanggal_persetujuan_akhir": "2025-10-06 00:00:00",
+        "tanggal_pendaftaran_awal": "2025-11-06 00:00:00",
+        "tanggal_pendaftaran_akhir": "2025-11-14 23:59:59",
+        "tanggal_pengumuman_mulai": "2025-11-12 00:00:00",
+        "tanggal_pengumuman_akhir": "2025-11-20 23:59:59",
+        "tanggal_lulus_awal": "2024-11-01 00:00:00",
+        "tanggal_lulus_akhir": "2025-10-31 00:00:00",
+        "publish": 1
+      },
+      "government_agency": {
+        "government_agency_name": null
+      },
+      "sub_government_agency": {
+        "sub_government_agency_name": null
+      }
+    },
+    {
+      "id_posisi": "a054d7db-b7f6-48e1-ba2b-a0faa8da457b",
+      "posisi": "Content Creator",
+      "deskripsi_posisi": "1. Membuat Konten Kreatif– Produksi foto, video, reels, dan carousel sesuai branding Avinci.\n2. Mengelola Strategi Konten – Susun kalender konten bulanan dan sesuaikan dengan campaign promosi.\n3. Editing & Post-Produksi – Edit konten agar profesional, estetis, dan selaras dengan karakter Avinci.\n4. Riset Tren & Ide Kreatif – Pantau tren industri wedding dan media sosial untuk ide konten baru.\n5. Kolaborasi Tim – Bekerja sama dengan tim marketing dan dokumentasikan proyek/event.\n6. Analisis Performa Konten– Evaluasi engagement, reach, dan leads; buat laporan rutin.\n7. Keterampilan Teknis – Menguasai Adobe Premiere, After Effects, Photoshop, atau Canva; mahir foto & video.\n8. Sikap & Kepribadian – Kreatif, inisiatif, detail, mampu multitasking dan memenuhi deadline.\n9. Spesifik Avinci – Berminat pada dunia wedding/event, menciptakan konten estetik dan elegan yang bercerita.",
       "syarat_khusus": null,
       "usia_minimal": null,
       "usia_maksimal": null,
@@ -18,7 +693,7 @@
       "id_status_posisi": 2,
       "jumlah_kuota": 1,
       "jumlah_terdaftar": 1,
-      "program_studi": "[{\"id\":\"95dd752e-e00f-4431-90bf-58bdd324a48f\",\"title\":\"Ilmu Komunikasi\"},{\"id\":\"e3668d6d-acab-4f65-8d20-262e73fe8f36\",\"title\":\"Manajemen Pemasaran\"},{\"id\":\"d3f1aee5-eb97-4b07-9029-557e1b03626b\",\"title\":\"Manajemen Pemasaran Pariwisata\"},{\"id\":\"e12302ac-c8dc-4d0a-90a7-402f6fafd27e\",\"title\":\"Manajemen Pemasaran\\/Marketing\"},{\"id\":\"2f6440b7-d057-40e7-bce1-9a4cf73f441d\",\"title\":\"Manajemen\"}]",
+      "program_studi": "[{\"id\":\"0397cb69-3411-4c91-b3a1-defbe5932670\",\"title\":\"Manajemen & Produksi Film Video & TV\"},{\"id\":\"95dd752e-e00f-4431-90bf-58bdd324a48f\",\"title\":\"Ilmu Komunikasi\"},{\"id\":\"f3649513-83b2-430f-bf51-cc6925874975\",\"title\":\"Bisnis Digital\"},{\"id\":\"9808ccda-82eb-47cd-a2e5-78d6baf95192\",\"title\":\"Pemasaran Digital\"},{\"id\":\"2f6440b7-d057-40e7-bce1-9a4cf73f441d\",\"title\":\"Manajemen\"}]",
       "jenjang": "[\"Diploma\",\"Sarjana\"]",
       "ref_status_posisi": {
         "id_status_posisi": 2,
@@ -74,81 +749,6 @@
       "sub_government_agency": {
         "sub_government_agency_name": null
       }
-    },
-    {
-      "id_posisi": "a05497ff-b653-4559-9ade-336861833ff9",
-      "posisi": "Penata Keprotokolan",
-      "deskripsi_posisi": "Mengelola dan melaksanakan protokoler acara: \n1. Perencanaan (penyusunan daftar, korespondensi, undangan, jadwal kegiatan) \n2. Penyambutan tamu, tata tempat dan tata upacara\n3. Pendampingan pimpinan & anggota\n4. Menyiapkan rapat dan menyusun notulensi rapat serta laporan kegiatan\n5. Melaksanakan tugas kedinasan lain yang diberikan atasan",
-      "syarat_khusus": null,
-      "usia_minimal": null,
-      "usia_maksimal": null,
-      "revisi": null,
-      "id_kondisi_fisik": null,
-      "id_program": "2848db1c-eaef-4e57-8b9f-cbf943e30ec9",
-      "created_at": "2025-11-11 07:54:17",
-      "updated_at": "2025-11-11 07:54:17",
-      "kode_kbji": null,
-      "penempatan": null,
-      "id_jenis_kelamin": null,
-      "id_status_posisi": 2,
-      "jumlah_kuota": 1,
-      "jumlah_terdaftar": 7,
-      "program_studi": "[{\"id\":\"95dd752e-e00f-4431-90bf-58bdd324a48f\",\"title\":\"Ilmu Komunikasi\"},{\"id\":\"63ce091e-3c73-424f-a68e-068d13a4f3b4\",\"title\":\"Ilmu Administrasi Publik\"},{\"id\":\"c0e490db-3138-4b19-993b-114d13a6ce6f\",\"title\":\"Ilmu Pemerintahan\"},{\"id\":\"b725ac52-6009-47c6-a349-3c15a8dc9141\",\"title\":\"Ilmu Politik\"},{\"id\":\"62c7cc14-9834-43f6-8f09-3d00e94c6671\",\"title\":\"Manajemen dan Kebijakan Publik\"}]",
-      "jenjang": "[\"Sarjana\",\"Diploma\"]",
-      "ref_status_posisi": {
-        "id_status_posisi": 2,
-        "nama_status_posisi": "Terverifikasi"
-      },
-      "program": {
-        "id_program": "2848db1c-eaef-4e57-8b9f-cbf943e30ec9",
-        "id_sumber_dana": null,
-        "id_perusahaan": "9d6f0425-0755-4996-8aeb-4a7322891f39",
-        "id_jadwal": "48039861-1251-474e-86af-d904e829093b"
-      },
-      "perusahaan": {
-        "id_perusahaan": "9d6f0425-0755-4996-8aeb-4a7322891f39",
-        "id_desa": null,
-        "nama_perusahaan": "Kantor DPD RI di Ibu Kota Provinsi DI Yogyakarta",
-        "deskripsi_perusahaan": null,
-        "alamat": "Kantor DPD RI DIY Jl. Kusumanegara No. 133, Yogyakarta 55164",
-        "logo": "https://maganghub.kemnaker.go.id/be/v1/storage/uploads/logo/2025/11/MWryCu3t3hSm8SUzUtspfxK3jPEXgWDjcFPhNNm6.png",
-        "banner": null,
-        "created_at": "2025-11-11 07:54:17",
-        "updated_at": "2025-11-11 07:54:17",
-        "kode_kabupaten": "3471",
-        "nama_kabupaten": "KOTA YOGYAKARTA",
-        "kode_provinsi": "34",
-        "nama_provinsi": "DAERAH ISTIMEWA YOGYAKARTA"
-      },
-      "jadwal": {
-        "id_jadwal": "48039861-1251-474e-86af-d904e829093b",
-        "angkatan": "2",
-        "tanggal_batas_pendaftaran": "2025-10-03 00:00:00",
-        "tanggal_mulai": "2025-11-24 00:00:00",
-        "tanggal_selesai": "2026-05-23 23:59:59",
-        "tahun": "2025",
-        "tanggal_rencana_mulai": "2025-10-24 00:00:00",
-        "tanggal_rencana_akhir": "2025-11-12 23:59:59",
-        "tanggal_seleksi_mulai": "2025-11-12 00:00:00",
-        "tanggal_seleksi_akhir": "2025-11-20 23:59:59",
-        "tanggal_usulan_mulai": "2025-10-01 00:00:00",
-        "tanggal_usulan_akhir": "2025-10-08 00:00:00",
-        "tanggal_persetujuan_awal": "2025-10-05 00:00:00",
-        "tanggal_persetujuan_akhir": "2025-10-06 00:00:00",
-        "tanggal_pendaftaran_awal": "2025-11-06 00:00:00",
-        "tanggal_pendaftaran_akhir": "2025-11-14 23:59:59",
-        "tanggal_pengumuman_mulai": "2025-11-12 00:00:00",
-        "tanggal_pengumuman_akhir": "2025-11-20 23:59:59",
-        "tanggal_lulus_awal": "2024-11-01 00:00:00",
-        "tanggal_lulus_akhir": "2025-10-31 00:00:00",
-        "publish": 1
-      },
-      "government_agency": {
-        "government_agency_name": "Dewan Perwakilan Daerah Republik Indonesia (DPD RI)"
-      },
-      "sub_government_agency": {
-        "sub_government_agency_name": "Kantor DPD RI di Ibu Kota Provinsi DI Yogyakarta"
-      }
     }
   ],
   "meta": {
@@ -163,9 +763,9 @@
       "path": null,
       "per_page": 100,
       "prev_page_url": null,
-      "to": 1002,
-      "total": 1002
+      "to": 1010,
+      "total": 1010
     }
   },
-  "_scraped_at": "2025-11-12T04:57:46.888464+00:00"
+  "_scraped_at": "2025-11-12T05:50:23.874472+00:00"
 }

@@ -1,20 +1,396 @@
 {
-  "data": [],
+  "data": [
+    {
+      "id_posisi": "a0541755-dc18-4394-af97-0da4894bbba7",
+      "posisi": "Pembina Kepribadian",
+      "deskripsi_posisi": "1. Menyusun dan melaksanakan program \npembinaan karakter warga binaan. \n2. Melatih keterampilan komunikasi dan \npengendalian diri \n3. Melakukan evaluasi hasil pembinaan \nkepribadian. \n4. Menyusun laporan perkembangan individu.",
+      "syarat_khusus": null,
+      "usia_minimal": null,
+      "usia_maksimal": null,
+      "revisi": null,
+      "id_kondisi_fisik": null,
+      "id_program": "6c2d38a2-2466-47e1-ab46-4d23212fc9ae",
+      "created_at": "2025-11-11 09:11:17",
+      "updated_at": "2025-11-11 09:11:17",
+      "kode_kbji": null,
+      "penempatan": null,
+      "id_jenis_kelamin": null,
+      "id_status_posisi": 2,
+      "jumlah_kuota": 1,
+      "jumlah_terdaftar": 0,
+      "program_studi": "[{\"id\":\"ca6db21e-4566-482b-a6bd-eb004b55effb\",\"title\":\"Pendidikan Agama Kristen\"},{\"id\":\"cc7efbac-6312-4a76-bb15-901aea26d27b\",\"title\":\"Pendidikan Keagamaan Katolik\"}]",
+      "jenjang": "[\"Sarjana\"]",
+      "ref_status_posisi": {
+        "id_status_posisi": 2,
+        "nama_status_posisi": "Terverifikasi"
+      },
+      "program": {
+        "id_program": "6c2d38a2-2466-47e1-ab46-4d23212fc9ae",
+        "id_sumber_dana": null,
+        "id_perusahaan": "ed525e3b-1467-4584-806e-3afd6d16d214",
+        "id_jadwal": "48039861-1251-474e-86af-d904e829093b"
+      },
+      "perusahaan": {
+        "id_perusahaan": "ed525e3b-1467-4584-806e-3afd6d16d214",
+        "id_desa": null,
+        "nama_perusahaan": "LEMBAGA PEMASYARAKATAN KELAS IIA GLADAKAN",
+        "deskripsi_perusahaan": null,
+        "alamat": "Jl. Nusakambangan KM. 7, Tambakreja, Cilacap Selatan, Cilacap, Jawa Tengah",
+        "logo": "https://maganghub.kemnaker.go.id/be/v1/storage/uploads/logo/2025/11/R0TaGBk4cIh6b4wwPjhuh192K2AO5rgiRMsMjKLf.png",
+        "banner": null,
+        "created_at": "2025-11-11 09:11:17",
+        "updated_at": "2025-11-11 09:11:17",
+        "kode_kabupaten": "3301",
+        "nama_kabupaten": "KAB. CILACAP",
+        "kode_provinsi": "33",
+        "nama_provinsi": "JAWA TENGAH"
+      },
+      "jadwal": {
+        "id_jadwal": "48039861-1251-474e-86af-d904e829093b",
+        "angkatan": "2",
+        "tanggal_batas_pendaftaran": "2025-10-03 00:00:00",
+        "tanggal_mulai": "2025-11-24 00:00:00",
+        "tanggal_selesai": "2026-05-23 23:59:59",
+        "tahun": "2025",
+        "tanggal_rencana_mulai": "2025-10-24 00:00:00",
+        "tanggal_rencana_akhir": "2025-11-12 23:59:59",
+        "tanggal_seleksi_mulai": "2025-11-12 00:00:00",
+        "tanggal_seleksi_akhir": "2025-11-20 23:59:59",
+        "tanggal_usulan_mulai": "2025-10-01 00:00:00",
+        "tanggal_usulan_akhir": "2025-10-08 00:00:00",
+        "tanggal_persetujuan_awal": "2025-10-05 00:00:00",
+        "tanggal_persetujuan_akhir": "2025-10-06 00:00:00",
+        "tanggal_pendaftaran_awal": "2025-11-06 00:00:00",
+        "tanggal_pendaftaran_akhir": "2025-11-14 23:59:59",
+        "tanggal_pengumuman_mulai": "2025-11-12 00:00:00",
+        "tanggal_pengumuman_akhir": "2025-11-20 23:59:59",
+        "tanggal_lulus_awal": "2024-11-01 00:00:00",
+        "tanggal_lulus_akhir": "2025-10-31 00:00:00",
+        "publish": 1
+      },
+      "government_agency": {
+        "government_agency_name": "Kementerian Imigrasi dan Pemasyarakatan"
+      },
+      "sub_government_agency": {
+        "sub_government_agency_name": "LEMBAGA PEMASYARAKATAN KELAS IIA GLADAKAN"
+      }
+    },
+    {
+      "id_posisi": "a0541871-3b7a-4e76-9348-881e7619bf59",
+      "posisi": "Pembina Kepribadian",
+      "deskripsi_posisi": "1. Menyusun dan melaksanakan program \npembinaan karakter warga binaan. \n2. Melatih keterampilan komunikasi dan \npengendalian diri \n3. Melakukan evaluasi hasil pembinaan \nkepribadian. \n4. Menyusun laporan perkembangan individu.",
+      "syarat_khusus": null,
+      "usia_minimal": null,
+      "usia_maksimal": null,
+      "revisi": null,
+      "id_kondisi_fisik": null,
+      "id_program": "6c2d38a2-2466-47e1-ab46-4d23212fc9ae",
+      "created_at": "2025-11-11 09:11:17",
+      "updated_at": "2025-11-11 09:11:17",
+      "kode_kbji": null,
+      "penempatan": null,
+      "id_jenis_kelamin": null,
+      "id_status_posisi": 2,
+      "jumlah_kuota": 1,
+      "jumlah_terdaftar": 0,
+      "program_studi": "[{\"id\":\"f8a85513-5cdb-45ef-9697-7eb7f13bb593\",\"title\":\"Pendidikan Keagamaan Buddha\"}]",
+      "jenjang": "[\"Sarjana\"]",
+      "ref_status_posisi": {
+        "id_status_posisi": 2,
+        "nama_status_posisi": "Terverifikasi"
+      },
+      "program": {
+        "id_program": "6c2d38a2-2466-47e1-ab46-4d23212fc9ae",
+        "id_sumber_dana": null,
+        "id_perusahaan": "ed525e3b-1467-4584-806e-3afd6d16d214",
+        "id_jadwal": "48039861-1251-474e-86af-d904e829093b"
+      },
+      "perusahaan": {
+        "id_perusahaan": "ed525e3b-1467-4584-806e-3afd6d16d214",
+        "id_desa": null,
+        "nama_perusahaan": "LEMBAGA PEMASYARAKATAN KELAS IIA GLADAKAN",
+        "deskripsi_perusahaan": null,
+        "alamat": "Jl. Nusakambangan KM. 7, Tambakreja, Cilacap Selatan, Cilacap, Jawa Tengah",
+        "logo": "https://maganghub.kemnaker.go.id/be/v1/storage/uploads/logo/2025/11/R0TaGBk4cIh6b4wwPjhuh192K2AO5rgiRMsMjKLf.png",
+        "banner": null,
+        "created_at": "2025-11-11 09:11:17",
+        "updated_at": "2025-11-11 09:11:17",
+        "kode_kabupaten": "3301",
+        "nama_kabupaten": "KAB. CILACAP",
+        "kode_provinsi": "33",
+        "nama_provinsi": "JAWA TENGAH"
+      },
+      "jadwal": {
+        "id_jadwal": "48039861-1251-474e-86af-d904e829093b",
+        "angkatan": "2",
+        "tanggal_batas_pendaftaran": "2025-10-03 00:00:00",
+        "tanggal_mulai": "2025-11-24 00:00:00",
+        "tanggal_selesai": "2026-05-23 23:59:59",
+        "tahun": "2025",
+        "tanggal_rencana_mulai": "2025-10-24 00:00:00",
+        "tanggal_rencana_akhir": "2025-11-12 23:59:59",
+        "tanggal_seleksi_mulai": "2025-11-12 00:00:00",
+        "tanggal_seleksi_akhir": "2025-11-20 23:59:59",
+        "tanggal_usulan_mulai": "2025-10-01 00:00:00",
+        "tanggal_usulan_akhir": "2025-10-08 00:00:00",
+        "tanggal_persetujuan_awal": "2025-10-05 00:00:00",
+        "tanggal_persetujuan_akhir": "2025-10-06 00:00:00",
+        "tanggal_pendaftaran_awal": "2025-11-06 00:00:00",
+        "tanggal_pendaftaran_akhir": "2025-11-14 23:59:59",
+        "tanggal_pengumuman_mulai": "2025-11-12 00:00:00",
+        "tanggal_pengumuman_akhir": "2025-11-20 23:59:59",
+        "tanggal_lulus_awal": "2024-11-01 00:00:00",
+        "tanggal_lulus_akhir": "2025-10-31 00:00:00",
+        "publish": 1
+      },
+      "government_agency": {
+        "government_agency_name": "Kementerian Imigrasi dan Pemasyarakatan"
+      },
+      "sub_government_agency": {
+        "sub_government_agency_name": "LEMBAGA PEMASYARAKATAN KELAS IIA GLADAKAN"
+      }
+    },
+    {
+      "id_posisi": "a0541af1-ca5e-4f02-9a8a-c23f0eed5367",
+      "posisi": "Pembina Kepribadian",
+      "deskripsi_posisi": "1. Menyusun dan melaksanakan program \npembinaan karakter warga binaan. \n2. Melatih keterampilan komunikasi dan \npengendalian diri \n3. Melakukan evaluasi hasil pembinaan \nkepribadian. \n4. Menyusun laporan perkembangan individu.",
+      "syarat_khusus": null,
+      "usia_minimal": null,
+      "usia_maksimal": null,
+      "revisi": null,
+      "id_kondisi_fisik": null,
+      "id_program": "6c2d38a2-2466-47e1-ab46-4d23212fc9ae",
+      "created_at": "2025-11-11 09:11:17",
+      "updated_at": "2025-11-11 09:11:17",
+      "kode_kbji": null,
+      "penempatan": null,
+      "id_jenis_kelamin": null,
+      "id_status_posisi": 2,
+      "jumlah_kuota": 1,
+      "jumlah_terdaftar": 1,
+      "program_studi": "[{\"id\":\"6cc338db-15f6-4a30-a320-1605e01bb828\",\"title\":\"Pendidikan Guru Sekolah Dasar (PGSD)\"}]",
+      "jenjang": "[\"Sarjana\"]",
+      "ref_status_posisi": {
+        "id_status_posisi": 2,
+        "nama_status_posisi": "Terverifikasi"
+      },
+      "program": {
+        "id_program": "6c2d38a2-2466-47e1-ab46-4d23212fc9ae",
+        "id_sumber_dana": null,
+        "id_perusahaan": "ed525e3b-1467-4584-806e-3afd6d16d214",
+        "id_jadwal": "48039861-1251-474e-86af-d904e829093b"
+      },
+      "perusahaan": {
+        "id_perusahaan": "ed525e3b-1467-4584-806e-3afd6d16d214",
+        "id_desa": null,
+        "nama_perusahaan": "LEMBAGA PEMASYARAKATAN KELAS IIA GLADAKAN",
+        "deskripsi_perusahaan": null,
+        "alamat": "Jl. Nusakambangan KM. 7, Tambakreja, Cilacap Selatan, Cilacap, Jawa Tengah",
+        "logo": "https://maganghub.kemnaker.go.id/be/v1/storage/uploads/logo/2025/11/R0TaGBk4cIh6b4wwPjhuh192K2AO5rgiRMsMjKLf.png",
+        "banner": null,
+        "created_at": "2025-11-11 09:11:17",
+        "updated_at": "2025-11-11 09:11:17",
+        "kode_kabupaten": "3301",
+        "nama_kabupaten": "KAB. CILACAP",
+        "kode_provinsi": "33",
+        "nama_provinsi": "JAWA TENGAH"
+      },
+      "jadwal": {
+        "id_jadwal": "48039861-1251-474e-86af-d904e829093b",
+        "angkatan": "2",
+        "tanggal_batas_pendaftaran": "2025-10-03 00:00:00",
+        "tanggal_mulai": "2025-11-24 00:00:00",
+        "tanggal_selesai": "2026-05-23 23:59:59",
+        "tahun": "2025",
+        "tanggal_rencana_mulai": "2025-10-24 00:00:00",
+        "tanggal_rencana_akhir": "2025-11-12 23:59:59",
+        "tanggal_seleksi_mulai": "2025-11-12 00:00:00",
+        "tanggal_seleksi_akhir": "2025-11-20 23:59:59",
+        "tanggal_usulan_mulai": "2025-10-01 00:00:00",
+        "tanggal_usulan_akhir": "2025-10-08 00:00:00",
+        "tanggal_persetujuan_awal": "2025-10-05 00:00:00",
+        "tanggal_persetujuan_akhir": "2025-10-06 00:00:00",
+        "tanggal_pendaftaran_awal": "2025-11-06 00:00:00",
+        "tanggal_pendaftaran_akhir": "2025-11-14 23:59:59",
+        "tanggal_pengumuman_mulai": "2025-11-12 00:00:00",
+        "tanggal_pengumuman_akhir": "2025-11-20 23:59:59",
+        "tanggal_lulus_awal": "2024-11-01 00:00:00",
+        "tanggal_lulus_akhir": "2025-10-31 00:00:00",
+        "publish": 1
+      },
+      "government_agency": {
+        "government_agency_name": "Kementerian Imigrasi dan Pemasyarakatan"
+      },
+      "sub_government_agency": {
+        "sub_government_agency_name": "LEMBAGA PEMASYARAKATAN KELAS IIA GLADAKAN"
+      }
+    },
+    {
+      "id_posisi": "a05444f0-dbab-4533-9202-255bd0413d90",
+      "posisi": "Penerjemah",
+      "deskripsi_posisi": "1. Menerjemahkan dokumen, surat, atau naskah resmi dari dan ke dalam bahasa asing sesuai kebutuhan;\n2. Meneydiakan layanan interpretasi lisan dalam kegiatan resmi kementerian;\n3. Melakukan penyuntingan hasil terjemahan agar sesuai dengan konteks hukum dan kebijakan IMIPAs;\n4. Mengarsipkan dokumen hasil terjemahan secara tertib dan aman;\n5. Menyusun laporan kegiatan penerjemahan sebagai bahan dokumentasi dan evaluasi.",
+      "syarat_khusus": null,
+      "usia_minimal": null,
+      "usia_maksimal": null,
+      "revisi": null,
+      "id_kondisi_fisik": null,
+      "id_program": "9e0432e9-edc3-4d95-b403-781411462c72",
+      "created_at": "2025-11-10 09:50:25",
+      "updated_at": "2025-11-10 09:50:25",
+      "kode_kbji": null,
+      "penempatan": null,
+      "id_jenis_kelamin": null,
+      "id_status_posisi": 2,
+      "jumlah_kuota": 1,
+      "jumlah_terdaftar": 1,
+      "program_studi": "[{\"id\":\"40a8bcf2-67dd-4ee2-8df2-caab6a0a1f7b\",\"title\":\"Sastra Cina\"}]",
+      "jenjang": "[\"Sarjana\"]",
+      "ref_status_posisi": {
+        "id_status_posisi": 2,
+        "nama_status_posisi": "Terverifikasi"
+      },
+      "program": {
+        "id_program": "9e0432e9-edc3-4d95-b403-781411462c72",
+        "id_sumber_dana": null,
+        "id_perusahaan": "d69ac12c-c19f-4135-8bd5-3472e850d5f0",
+        "id_jadwal": "48039861-1251-474e-86af-d904e829093b"
+      },
+      "perusahaan": {
+        "id_perusahaan": "d69ac12c-c19f-4135-8bd5-3472e850d5f0",
+        "id_desa": null,
+        "nama_perusahaan": "KANIM KELAS II TPI CILACAP",
+        "deskripsi_perusahaan": null,
+        "alamat": "JALAN URIP SUMOHARJO NO. 249 GUMILIR, KECAMATAN CILACAP UTARA, KABUPATEN CILACAP, JAWA TENGAH",
+        "logo": "https://maganghub.kemnaker.go.id/be/v1/storage/uploads/logo/2025/11/CERzqE7qChpCj6kN8uBbboHoqHYxg5BO70d5rFrA.png",
+        "banner": null,
+        "created_at": "2025-11-10 09:50:25",
+        "updated_at": "2025-11-10 09:50:25",
+        "kode_kabupaten": "3301",
+        "nama_kabupaten": "KAB. CILACAP",
+        "kode_provinsi": "33",
+        "nama_provinsi": "JAWA TENGAH"
+      },
+      "jadwal": {
+        "id_jadwal": "48039861-1251-474e-86af-d904e829093b",
+        "angkatan": "2",
+        "tanggal_batas_pendaftaran": "2025-10-03 00:00:00",
+        "tanggal_mulai": "2025-11-24 00:00:00",
+        "tanggal_selesai": "2026-05-23 23:59:59",
+        "tahun": "2025",
+        "tanggal_rencana_mulai": "2025-10-24 00:00:00",
+        "tanggal_rencana_akhir": "2025-11-12 23:59:59",
+        "tanggal_seleksi_mulai": "2025-11-12 00:00:00",
+        "tanggal_seleksi_akhir": "2025-11-20 23:59:59",
+        "tanggal_usulan_mulai": "2025-10-01 00:00:00",
+        "tanggal_usulan_akhir": "2025-10-08 00:00:00",
+        "tanggal_persetujuan_awal": "2025-10-05 00:00:00",
+        "tanggal_persetujuan_akhir": "2025-10-06 00:00:00",
+        "tanggal_pendaftaran_awal": "2025-11-06 00:00:00",
+        "tanggal_pendaftaran_akhir": "2025-11-14 23:59:59",
+        "tanggal_pengumuman_mulai": "2025-11-12 00:00:00",
+        "tanggal_pengumuman_akhir": "2025-11-20 23:59:59",
+        "tanggal_lulus_awal": "2024-11-01 00:00:00",
+        "tanggal_lulus_akhir": "2025-10-31 00:00:00",
+        "publish": 1
+      },
+      "government_agency": {
+        "government_agency_name": "Kementerian Imigrasi dan Pemasyarakatan"
+      },
+      "sub_government_agency": {
+        "sub_government_agency_name": "KANIM KELAS II TPI CILACAP"
+      }
+    },
+    {
+      "id_posisi": "a0541ea2-2f2b-4270-b208-c1c44743facd",
+      "posisi": "Pembina Kepribadian",
+      "deskripsi_posisi": "1. Menyusun dan melaksanakan program \npembinaan karakter warga binaan. \n2. Melatih keterampilan komunikasi dan \npengendalian diri \n3. Melakukan evaluasi hasil pembinaan \nkepribadian. \n4. Menyusun laporan perkembangan individu.",
+      "syarat_khusus": null,
+      "usia_minimal": null,
+      "usia_maksimal": null,
+      "revisi": null,
+      "id_kondisi_fisik": null,
+      "id_program": "6c2d38a2-2466-47e1-ab46-4d23212fc9ae",
+      "created_at": "2025-11-11 09:11:17",
+      "updated_at": "2025-11-11 09:11:17",
+      "kode_kbji": null,
+      "penempatan": null,
+      "id_jenis_kelamin": null,
+      "id_status_posisi": 2,
+      "jumlah_kuota": 1,
+      "jumlah_terdaftar": 1,
+      "program_studi": "[{\"id\":\"9cd9d15c-d9eb-4d4a-8f13-7f6272e6c8ee\",\"title\":\"Pendidikan Olahraga Dan Kesehatan\"}]",
+      "jenjang": "[\"Sarjana\"]",
+      "ref_status_posisi": {
+        "id_status_posisi": 2,
+        "nama_status_posisi": "Terverifikasi"
+      },
+      "program": {
+        "id_program": "6c2d38a2-2466-47e1-ab46-4d23212fc9ae",
+        "id_sumber_dana": null,
+        "id_perusahaan": "ed525e3b-1467-4584-806e-3afd6d16d214",
+        "id_jadwal": "48039861-1251-474e-86af-d904e829093b"
+      },
+      "perusahaan": {
+        "id_perusahaan": "ed525e3b-1467-4584-806e-3afd6d16d214",
+        "id_desa": null,
+        "nama_perusahaan": "LEMBAGA PEMASYARAKATAN KELAS IIA GLADAKAN",
+        "deskripsi_perusahaan": null,
+        "alamat": "Jl. Nusakambangan KM. 7, Tambakreja, Cilacap Selatan, Cilacap, Jawa Tengah",
+        "logo": "https://maganghub.kemnaker.go.id/be/v1/storage/uploads/logo/2025/11/R0TaGBk4cIh6b4wwPjhuh192K2AO5rgiRMsMjKLf.png",
+        "banner": null,
+        "created_at": "2025-11-11 09:11:17",
+        "updated_at": "2025-11-11 09:11:17",
+        "kode_kabupaten": "3301",
+        "nama_kabupaten": "KAB. CILACAP",
+        "kode_provinsi": "33",
+        "nama_provinsi": "JAWA TENGAH"
+      },
+      "jadwal": {
+        "id_jadwal": "48039861-1251-474e-86af-d904e829093b",
+        "angkatan": "2",
+        "tanggal_batas_pendaftaran": "2025-10-03 00:00:00",
+        "tanggal_mulai": "2025-11-24 00:00:00",
+        "tanggal_selesai": "2026-05-23 23:59:59",
+        "tahun": "2025",
+        "tanggal_rencana_mulai": "2025-10-24 00:00:00",
+        "tanggal_rencana_akhir": "2025-11-12 23:59:59",
+        "tanggal_seleksi_mulai": "2025-11-12 00:00:00",
+        "tanggal_seleksi_akhir": "2025-11-20 23:59:59",
+        "tanggal_usulan_mulai": "2025-10-01 00:00:00",
+        "tanggal_usulan_akhir": "2025-10-08 00:00:00",
+        "tanggal_persetujuan_awal": "2025-10-05 00:00:00",
+        "tanggal_persetujuan_akhir": "2025-10-06 00:00:00",
+        "tanggal_pendaftaran_awal": "2025-11-06 00:00:00",
+        "tanggal_pendaftaran_akhir": "2025-11-14 23:59:59",
+        "tanggal_pengumuman_mulai": "2025-11-12 00:00:00",
+        "tanggal_pengumuman_akhir": "2025-11-20 23:59:59",
+        "tanggal_lulus_awal": "2024-11-01 00:00:00",
+        "tanggal_lulus_akhir": "2025-10-31 00:00:00",
+        "publish": 1
+      },
+      "government_agency": {
+        "government_agency_name": "Kementerian Imigrasi dan Pemasyarakatan"
+      },
+      "sub_government_agency": {
+        "sub_government_agency_name": "LEMBAGA PEMASYARAKATAN KELAS IIA GLADAKAN"
+      }
+    }
+  ],
   "meta": {
     "pagination": {
       "current_page": 30,
       "first_page_url": null,
-      "from": null,
-      "last_page": 29,
+      "from": 2901,
+      "last_page": 30,
       "last_page_url": null,
       "links": null,
       "next_page_url": null,
       "path": null,
       "per_page": 100,
       "prev_page_url": null,
-      "to": null,
-      "total": 2896
+      "to": 2905,
+      "total": 2905
     }
   },
-  "_scraped_at": "2025-11-12T04:57:28.482653+00:00"
+  "_scraped_at": "2025-11-12T05:49:39.647424+00:00"
 }
