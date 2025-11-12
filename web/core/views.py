@@ -32,7 +32,9 @@ def filter_view(request):
 	# extra filters
 	kabupaten_list = request.GET.getlist("kabupaten")
 	program_studi_q = request.GET.get("program_studi", "").strip()
-	government_agency_present = request.GET.get("government_agency_present", "both")
+	# government filter: treat as multi-choice like provinces/kabupaten. Values: 'gov' and 'non_gov'
+	# If none provided, we treat as 'both' (no restriction).
+	selected_govs = request.GET.getlist("gov")
 	# keywords will search inside deskripsi_posisi (tokenized OR)
 	keywords_q = request.GET.get("keywords", "").strip()
 
@@ -89,16 +91,24 @@ def filter_view(request):
 		return False
 
 	def _match_gov(item):
-		# three-state filter: both => accept all; true => must have govt agency name; false => must NOT have one
-		if government_agency_present == "both":
+		# multi-select behaviour:
+		# - if no selection (selected_govs empty) -> accept all
+		# - if both 'gov' and 'non_gov' selected -> accept all
+		# - if only 'gov' selected -> accept items that have a government agency
+		# - if only 'non_gov' selected -> accept items without a government agency
+		if not selected_govs:
 			return True
 		ga = (item.get("government_agency") or {}).get("government_agency_name")
 		sga = (item.get("sub_government_agency") or {}).get("sub_government_agency_name")
 		has_gov = bool((ga and str(ga).strip()) or (sga and str(sga).strip()))
-		if government_agency_present == "true":
+		# if both selected, allow all
+		if 'gov' in selected_govs and 'non_gov' in selected_govs:
+			return True
+		if 'gov' in selected_govs:
 			return has_gov
-		if government_agency_present == "false":
+		if 'non_gov' in selected_govs:
 			return not has_gov
+		# default accept
 		return True
 
 	def _match_keywords(item):
@@ -249,7 +259,8 @@ def filter_view(request):
 		"selected_provs": prov_list,
 		"selected_kabs": kabupaten_list,
 		"program_studi_q": program_studi_q,
-		"government_agency_present": government_agency_present,
+		"selected_govs": selected_govs,
+		"gov_options": [("gov", "Government"), ("non_gov", "Non-Government")],
 		"keywords_q": keywords_q,
 		"results": results,
 		"error": error,
