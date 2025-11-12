@@ -1,0 +1,438 @@
+{
+  "data": [
+    {
+      "id_propinsi": "4e6abc29-300b-4bb4-8222-46d7c5d59f49",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "11",
+      "nama_propinsi": "ACEH",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "c63a30a8-db19-48a3-8782-0680555ae95b",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "51",
+      "nama_propinsi": "BALI",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "3165c146-2174-4ab7-91e9-948fc4ef97ea",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "36",
+      "nama_propinsi": "BANTEN",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "d078e36e-6d89-45be-86b6-cba20fb53e89",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "17",
+      "nama_propinsi": "BENGKULU",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "c3cf327f-6a6a-4bb0-8e30-5cac0c707640",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "34",
+      "nama_propinsi": "DAERAH ISTIMEWA YOGYAKARTA",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "224c2de4-72b5-4e58-9f20-5f869d68ddab",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "31",
+      "nama_propinsi": "DKI JAKARTA",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "7e182112-1b17-4e56-97de-12b45af94f27",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "75",
+      "nama_propinsi": "GORONTALO",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "5d7785b0-a3e1-4145-bf62-4c9ec276fd6d",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "15",
+      "nama_propinsi": "JAMBI",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "e2749b3e-df73-4821-aad3-aa170c740fa1",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "32",
+      "nama_propinsi": "JAWA BARAT",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "e1e7e14d-dd38-4e70-9478-b53b5c492778",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "33",
+      "nama_propinsi": "JAWA TENGAH",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "d5b90b58-bfb2-4afa-b754-d1280dabe9b3",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "35",
+      "nama_propinsi": "JAWA TIMUR",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "1fec4df3-9e70-43d9-943b-8b6155f917f5",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "61",
+      "nama_propinsi": "KALIMANTAN BARAT",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "8f9f0393-dedb-40b2-95f9-99260fe4584f",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "63",
+      "nama_propinsi": "KALIMANTAN SELATAN",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "ebe4437e-b8c4-42f9-8196-ef60016ae3a3",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "62",
+      "nama_propinsi": "KALIMANTAN TENGAH",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "b0700597-2279-47f1-8c19-b6214988a6d4",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "64",
+      "nama_propinsi": "KALIMANTAN TIMUR",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "a380e24c-bc65-456b-aa92-6af9882dafd7",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "65",
+      "nama_propinsi": "KALIMANTAN UTARA",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "28b2c671-3a9b-4671-b1b2-348242d98d60",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "19",
+      "nama_propinsi": "KEPULAUAN BANGKA BELITUNG",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "914c36bb-0e57-43bd-a40b-dbaa3235e44b",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "21",
+      "nama_propinsi": "KEPULAUAN RIAU",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "0c37c4d1-ec38-4ffc-8d98-6cab81787286",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "18",
+      "nama_propinsi": "LAMPUNG",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "b63d3f4b-1ff9-49a4-a962-03e7c403c575",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "81",
+      "nama_propinsi": "MALUKU",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "94352d9e-c24b-47ff-959f-a58659fb1ded",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "82",
+      "nama_propinsi": "MALUKU UTARA",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "cb4213e7-d491-436e-9b45-0b4c93ec0787",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "52",
+      "nama_propinsi": "NUSA TENGGARA BARAT",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "3cb91f2b-94aa-42f9-844a-3d6c64b96c55",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "53",
+      "nama_propinsi": "NUSA TENGGARA TIMUR",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "e11115b2-dbd3-4aad-9c74-a3a819001af6",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "91",
+      "nama_propinsi": "PAPUA",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "5f72ce17-18b4-4742-862e-9dd92e8ade23",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "92",
+      "nama_propinsi": "PAPUA BARAT",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "43c1eb36-e2e6-4e5d-903a-6fd10ad60e3d",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "96",
+      "nama_propinsi": "PAPUA BARAT DAYA",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "3e407a44-210b-4f42-b438-cd284d4b356a",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "95",
+      "nama_propinsi": "PAPUA PEGUNUNGAN",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "7f8e2003-261f-4da8-a2a9-247dce14025e",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "93",
+      "nama_propinsi": "PAPUA SELATAN",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "26e8d648-9375-4f30-bd6b-b73593b0bebc",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "94",
+      "nama_propinsi": "PAPUA TENGAH",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "59d95d26-e93c-4471-9c64-490dde0b029b",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "14",
+      "nama_propinsi": "RIAU",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "4a34b4f1-961b-4ff5-8e7f-f2045df93936",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "76",
+      "nama_propinsi": "SULAWESI BARAT",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "f80adbca-04da-41d7-bdb0-d9aadb398302",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "73",
+      "nama_propinsi": "SULAWESI SELATAN",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "1389a6bf-afe6-4ff7-b464-5f0569530ef2",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "72",
+      "nama_propinsi": "SULAWESI TENGAH",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "07ebbdc0-f0a9-4c76-96b6-65026555f124",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "74",
+      "nama_propinsi": "SULAWESI TENGGARA",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "e5a3a3de-5141-42c8-924f-36f99e414244",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "71",
+      "nama_propinsi": "SULAWESI UTARA",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "cc16e1e8-dfac-4a75-b1cc-333bc4992112",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "13",
+      "nama_propinsi": "SUMATERA BARAT",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "75ca55c9-7b5a-43fb-837d-327b3e918d09",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "16",
+      "nama_propinsi": "SUMATERA SELATAN",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    },
+    {
+      "id_propinsi": "29ff6ee5-7e87-47b1-8afe-d0cdaaf3a095",
+      "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+      "kode_propinsi": "12",
+      "nama_propinsi": "SUMATERA UTARA",
+      "ref_negara": {
+        "id_negara": "0ac28afb-b1be-4df3-9db3-7448ddd3adbf",
+        "kode_negara": "ID",
+        "nama_negara": "Indonesia"
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "current_page": 1,
+      "first_page_url": null,
+      "from": 1,
+      "last_page": 1,
+      "last_page_url": null,
+      "links": null,
+      "next_page_url": null,
+      "path": null,
+      "per_page": 40,
+      "prev_page_url": null,
+      "to": 38,
+      "total": 38
+    }
+  }
+}
