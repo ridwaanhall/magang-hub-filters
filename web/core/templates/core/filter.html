@@ -8,21 +8,27 @@
     <div class="space-y-2">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div>
-          <label>Province (multi-select)</label>
-          <select name="prov" multiple class="w-full p-2 border rounded h-32">
+          <label class="block mb-1">Province (multi-select)</label>
+          <div id="prov-container" class="w-full p-2 border rounded h-32 overflow-auto">
             {% for p in prov_choices %}
-              <option value="{{ p }}" {% if p in selected_provs %}selected{% endif %}>{{ p }}</option>
+              <label class="block">
+                <input type="checkbox" name="prov" value="{{ p }}" {% if p in selected_provs %}checked{% endif %}>
+                <span class="ml-2">{{ p }}</span>
+              </label>
             {% endfor %}
-          </select>
+          </div>
         </div>
 
         <div>
-          <label>Kabupaten (multi-select)</label>
-          <select id="kab-select" name="kabupaten" multiple class="w-full p-2 border rounded h-32">
+          <label class="block mb-1">Kabupaten (multi-select)</label>
+          <div id="kab-container" class="w-full p-2 border rounded h-32 overflow-auto">
             {% for k in kab_choices %}
-              <option value="{{ k }}" {% if k in selected_kabs %}selected{% endif %}>{{ k }}</option>
+              <label class="block">
+                <input type="checkbox" name="kabupaten" value="{{ k }}" {% if k in selected_kabs %}checked{% endif %}>
+                <span class="ml-2">{{ k }}</span>
+              </label>
             {% endfor %}
-          </select>
+          </div>
         </div>
 
         <div>
@@ -104,28 +110,50 @@
   (function(){
     try {
       const provToKabs = JSON.parse('{{ prov_to_kabs_json|escapejs }}' || '{}');
-      const provSelect = document.querySelector('select[name="prov"]');
-      const kabSelect = document.getElementById('kab-select');
-      if (!provSelect || !kabSelect) return;
+      const provContainer = document.getElementById('prov-container');
+      const kabContainer = document.getElementById('kab-container');
+      if (!provContainer || !kabContainer) return;
+
+      function getCheckedProvs(){
+        return Array.from(provContainer.querySelectorAll('input[name="prov"]:checked')).map(i=>i.value);
+      }
+
+      function getCheckedKabs(){
+        return Array.from(kabContainer.querySelectorAll('input[name="kabupaten"]:checked')).map(i=>i.value);
+      }
 
       function updateKabOptions(){
-        const selected = Array.from(provSelect.selectedOptions).map(o=>o.value);
-        const set = new Set();
-        selected.forEach(p => {
-          (provToKabs[p] || []).forEach(k => set.add(k));
+        const selectedProv = getCheckedProvs();
+        const kabSet = new Set();
+        selectedProv.forEach(p => {
+          (provToKabs[p] || []).forEach(k => kabSet.add(k));
         });
-        const options = Array.from(set).sort((a,b)=> a.localeCompare(b));
-        const prev = new Set(Array.from(kabSelect.selectedOptions).map(o=>o.value));
-        kabSelect.innerHTML = '';
+        const options = Array.from(kabSet).sort((a,b)=> a.localeCompare(b));
+
+        // preserve previous selections when possible
+        const prev = new Set(getCheckedKabs());
+
+        // rebuild checkboxes
+        kabContainer.innerHTML = '';
         options.forEach(k => {
-          const opt = document.createElement('option');
-          opt.value = k; opt.textContent = k;
-          if (prev.has(k)) opt.selected = true;
-          kabSelect.appendChild(opt);
+          const label = document.createElement('label');
+          label.className = 'block';
+          const input = document.createElement('input');
+          input.type = 'checkbox';
+          input.name = 'kabupaten';
+          input.value = k;
+          if (prev.has(k)) input.checked = true;
+          const span = document.createElement('span');
+          span.className = 'ml-2';
+          span.textContent = k;
+          label.appendChild(input);
+          label.appendChild(span);
+          kabContainer.appendChild(label);
         });
       }
 
-      provSelect.addEventListener('change', updateKabOptions);
+      // attach listeners to existing province checkboxes
+      provContainer.querySelectorAll('input[name="prov"]').forEach(cb => cb.addEventListener('change', updateKabOptions));
       // initial sync
       updateKabOptions();
     } catch (e) {
