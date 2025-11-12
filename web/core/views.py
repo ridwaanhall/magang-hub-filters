@@ -35,6 +35,8 @@ def filter_view(request):
 	# government filter: treat as multi-choice like provinces/kabupaten. Values: 'gov' and 'non_gov'
 	# If none provided, we treat as 'both' (no restriction).
 	selected_govs = request.GET.getlist("gov")
+	# short display mode: '1' = accept percentage, '2' = jumlah_kuota, '3' = jumlah_terdaftar
+	short_mode = request.GET.get("short", "2")
 	# keywords will search inside deskripsi_posisi (tokenized OR)
 	keywords_q = request.GET.get("keywords", "").strip()
 
@@ -251,6 +253,9 @@ def filter_view(request):
 				"deskripsi_posisi": it.get("deskripsi_posisi"),
 				# compute accept percentage: (jumlah_terdaftar + 1) / jumlah_kuota * 100
 				"accept_pct": None,
+				"accept_pct_value": 0.0,
+				"kuota": 0,
+				"terdaftar": 0,
 			})
 
 			# compute and set accept_pct after append to avoid deep nesting
@@ -278,11 +283,34 @@ def filter_view(request):
 					pct = 0.0
 				# always display actual denom (may be 0) but compute using safe_denom
 				display_results[-1]["accept_pct"] = f"{numer}/{denom} ({pct:.1f}%)"
+				# store numeric values for sorting
+				display_results[-1]["accept_pct_value"] = pct
+				display_results[-1]["kuota"] = jq_i
+				display_results[-1]["terdaftar"] = jt_i
+				# determine short display based on user-selected short_mode
+				if short_mode == "1":
+					display_results[-1]["short"] = display_results[-1]["accept_pct"]
+				elif short_mode == "3":
+					display_results[-1]["short"] = str(jt_i)
+				else:
+					# default and '2'
+					display_results[-1]["short"] = str(jq_i)
 			except Exception:
 				# on any error, set placeholder
 				display_results[-1]["accept_pct"] = "-"
 
 	# use display_results in template
+	# sort results according to short_mode if requested (desc)
+	if short_mode == "1":
+		# sort by accept percentage (numeric) desc
+		display_results.sort(key=lambda x: x.get("accept_pct_value", 0.0), reverse=True)
+	elif short_mode == "2":
+		# sort by jumlah_kuota desc
+		display_results.sort(key=lambda x: int(x.get("kuota") or 0), reverse=True)
+	elif short_mode == "3":
+		# sort by jumlah_terdaftar desc
+		display_results.sort(key=lambda x: int(x.get("terdaftar") or 0), reverse=True)
+
 	results = display_results
 
 	context = {
@@ -292,6 +320,7 @@ def filter_view(request):
 		"program_studi_q": program_studi_q,
 		"selected_govs": selected_govs,
 		"gov_options": [("gov", "Government"), ("non_gov", "Non-Government")],
+		"short_mode": short_mode,
 		"keywords_q": keywords_q,
 		"results": results,
 		"error": error,

@@ -53,6 +53,14 @@
           <label>Keywords (search in description, OR tokens)</label>
           <input type="text" name="keywords" value="{{ keywords_q }}" class="w-full p-2 border rounded" placeholder="e.g. python html css">
         </div>
+        <div class="w-40">
+          <label>Short</label>
+          <select name="short" class="w-full p-2 border rounded">
+            <option value="1" {% if short_mode == '1' %}selected{% endif %}>Percent (accept)</option>
+            <option value="2" {% if short_mode == '2' %}selected{% endif %}>Kuota</option>
+            <option value="3" {% if short_mode == '3' %}selected{% endif %}>Terdaftar</option>
+          </select>
+        </div>
       </div>
 
       <div>
@@ -66,7 +74,8 @@
   {% endif %}
 
   <div class="space-y-4">
-    <h2 class="text-xl font-semibold">Results ({{ results|length }})</h2>
+  <h2 class="text-xl font-semibold">Results ({{ results|length }})</h2>
+  <div class="text-sm text-gray-500">Sorted by: {% if short_mode == '1' %}Percent{% elif short_mode == '2' %}Kuota{% else %}Terdaftar{% endif %}</div>
     {% if results %}
       <div class="overflow-x-auto">
         <table class="min-w-full bg-white border">
@@ -78,6 +87,7 @@
               <th class="px-4 py-2 border">Provinsi</th>
               <th class="px-4 py-2 border">Program Studi</th>
               <th class="px-4 py-2 border">Jenjang</th>
+              <th class="px-4 py-2 border">Short</th>
               <th class="px-4 py-2 border">Accept (%)</th>
               <th class="px-4 py-2 border">Link</th>
             </tr>
@@ -96,6 +106,7 @@
                 <td class="px-4 py-2 border align-top">{{ item.nama_provinsi }}</td>
                 <td class="px-4 py-2 border align-top">{{ item.program_studi }}</td>
                 <td class="px-4 py-2 border align-top">{{ item.jenjang }}</td>
+                <td class="px-4 py-2 border align-top">{{ item.short }}</td>
                 <td class="px-4 py-2 border align-top">{{ item.accept_pct }}</td>
                 <td class="px-4 py-2 border align-top">
                   {% if item.id_posisi %}
