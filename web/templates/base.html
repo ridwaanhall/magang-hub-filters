@@ -1,0 +1,19 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}MagangHub Filters{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'output.css' %}">
+  </head>
+  <body class="bg-gray-50 text-gray-900 min-h-screen">
+    {% include 'navbar.html' %}
+
+    <main class="py-8">
+      {% block content %}{% endblock %}
+    </main>
+
+    {% include 'footer.html' %}
+  </body>
+</html>
