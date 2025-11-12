@@ -1,5 +1,6 @@
 from pathlib import Path
 from typing import List
+import json
 
 from django.shortcuts import render
 
@@ -31,7 +32,7 @@ def filter_view(request):
 	# extra filters
 	kabupaten_list = request.GET.getlist("kabupaten")
 	program_studi_q = request.GET.get("program_studi", "").strip()
-	government_agency_q = request.GET.get("government_agency", "").strip()
+	government_agency_present = request.GET.get("government_agency_present", "both")
 
 	# iterate items across selected provinces
 	results: List[dict] = []
@@ -80,11 +81,17 @@ def filter_view(request):
 		return False
 
 	def _match_gov(item):
-		if not government_agency_q:
+		# three-state filter: both => accept all; true => must have govt agency name; false => must NOT have one
+		if government_agency_present == "both":
 			return True
-		ga = (item.get("government_agency") or {}).get("government_agency_name") or ""
-		sga = (item.get("sub_government_agency") or {}).get("sub_government_agency_name") or ""
-		return (government_agency_q.lower() in str(ga).lower()) or (government_agency_q.lower() in str(sga).lower())
+		ga = (item.get("government_agency") or {}).get("government_agency_name")
+		sga = (item.get("sub_government_agency") or {}).get("sub_government_agency_name")
+		has_gov = bool((ga and str(ga).strip()) or (sga and str(sga).strip()))
+		if government_agency_present == "true":
+			return has_gov
+		if government_agency_present == "false":
+			return not has_gov
+		return True
 
 	if results:
 		filtered = [it for it in results if _match_kab(it) and _match_prog(it) and _match_gov(it)]
@@ -102,6 +109,24 @@ def filter_view(request):
 				prov_choices.append(p.name)
 	except Exception:
 		prov_choices = []
+
+	# build mapping of province -> kabupaten list (for client-side dynamic filtering)
+	prov_to_kabs = {}
+	try:
+		for prov_name in prov_choices:
+			kset = set()
+			try:
+				vs_tmp = VacancySearch(DATA_ROOT / prov_name)
+				for it in vs_tmp.iter_items():
+					cp = it.get("perusahaan") or {}
+					nk = cp.get("nama_kabupaten")
+					if nk:
+						kset.add(nk)
+			except Exception:
+				pass
+			prov_to_kabs[prov_name] = sorted(kset)
+	except Exception:
+		prov_to_kabs = {}
 
 	# collect kabupaten and government agency choices from the dataset
 	kab_choices = set()
@@ -125,6 +150,8 @@ def filter_view(request):
 	kab_choices = sorted(kab_choices)
 	gov_choices = sorted(gov_choices)
 
+	# (no per-agency multi-select anymore)
+
 	# prepare display-friendly results (parse program_studi, jenjang)
 	display_results = []
 	if results:
@@ -133,7 +160,6 @@ def filter_view(request):
 		except Exception:
 			_parse_program_studi = None
 
-		import json
 
 		for it in results:
 			cp = it.get("perusahaan") or {}
@@ -182,11 +208,12 @@ def filter_view(request):
 		"prov_choices": sorted(prov_choices),
 		"selected_provs": prov_list,
 		"selected_kabs": kabupaten_list,
-		"program_studi_q": program_studi_q,
-		"government_agency_q": government_agency_q,
+	"program_studi_q": program_studi_q,
+	"government_agency_present": government_agency_present,
 		"results": results,
 		"error": error,
 		"kab_choices": kab_choices,
 		"gov_choices": gov_choices,
+		"prov_to_kabs_json": json.dumps(prov_to_kabs),
 	}
 	return render(request, "core/filter.html", context)

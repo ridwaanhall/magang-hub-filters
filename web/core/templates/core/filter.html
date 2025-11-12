@@ -18,7 +18,7 @@
 
         <div>
           <label>Kabupaten (multi-select)</label>
-          <select name="kabupaten" multiple class="w-full p-2 border rounded h-32">
+          <select id="kab-select" name="kabupaten" multiple class="w-full p-2 border rounded h-32">
             {% for k in kab_choices %}
               <option value="{{ k }}" {% if k in selected_kabs %}selected{% endif %}>{{ k }}</option>
             {% endfor %}
@@ -27,11 +27,10 @@
 
         <div>
           <label>Government Agency</label>
-          <select name="government_agency" class="w-full p-2 border rounded">
-            <option value="">-- any --</option>
-            {% for g in gov_choices %}
-              <option value="{{ g }}" {% if g == government_agency_q %}selected{% endif %}>{{ g }}</option>
-            {% endfor %}
+          <select name="government_agency_present" class="w-full p-2 border rounded">
+            <option value="both" {% if government_agency_present == 'both' %}selected{% endif %}>Both</option>
+            <option value="true" {% if government_agency_present == 'true' %}selected{% endif %}>Has government agency</option>
+            <option value="false" {% if government_agency_present == 'false' %}selected{% endif %}>No government agency</option>
           </select>
         </div>
       </div>
@@ -100,4 +99,38 @@
     {% endif %}
   </div>
 </div>
+  <script>
+  // prov_to_kabs_json injected by view (escaped). Parse it and use to update kabupaten options
+  (function(){
+    try {
+      const provToKabs = JSON.parse('{{ prov_to_kabs_json|escapejs }}' || '{}');
+      const provSelect = document.querySelector('select[name="prov"]');
+      const kabSelect = document.getElementById('kab-select');
+      if (!provSelect || !kabSelect) return;
+
+      function updateKabOptions(){
+        const selected = Array.from(provSelect.selectedOptions).map(o=>o.value);
+        const set = new Set();
+        selected.forEach(p => {
+          (provToKabs[p] || []).forEach(k => set.add(k));
+        });
+        const options = Array.from(set).sort((a,b)=> a.localeCompare(b));
+        const prev = new Set(Array.from(kabSelect.selectedOptions).map(o=>o.value));
+        kabSelect.innerHTML = '';
+        options.forEach(k => {
+          const opt = document.createElement('option');
+          opt.value = k; opt.textContent = k;
+          if (prev.has(k)) opt.selected = true;
+          kabSelect.appendChild(opt);
+        });
+      }
+
+      provSelect.addEventListener('change', updateKabOptions);
+      // initial sync
+      updateKabOptions();
+    } catch (e) {
+      console.warn('prov->kab update failed', e);
+    }
+  })();
+  </script>
 {% endblock %}
